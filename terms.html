@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="robots" content="noindex" />
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Arenalyst</title>
+      <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <link href="css/vendors.2b28d5da.css" rel="stylesheet">
+      <link href="css/main.a70e25f9.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet" />
+      <link href="src/output.css" rel="stylesheet"/>
+   </head>
+        <style>
+                              .fun-shadow {
+                              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                              }
+                              .category-tab {
+                              transition: all 0.2s ease;
+                              }
+                              .category-tab:hover {
+                              transform: translateY(-2px);
+                              box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+                              }
+                              .arena-gradient {
+                              background: linear-gradient(135deg, #FFE4B5 0%, #FFDAB9 50%, #FFB6C1 100%);
+                              }
+                              .highlight-button {
+                              background: linear-gradient(135deg, #FF6B35, #F7931E);
+                              color: white;
+                              font-weight: bold;
+                              }
+                              .highlight-button:hover {
+                              background: linear-gradient(135deg, #E55A2B, #D17D1A);
+                              }
+                           </style>
+   <style>
+      #mobileMenu.opacity-100 { opacity: 1; }
+   </style>
+   <script src="./terms_files/v3"></script></head>
+   <body cz-shortcut-listen="true">
+      <div id="root">
+         <div class="font-sans">
+            <div>
+               <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
+                  <ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol>
+               </div>
+            </div>
+            <div>
+               <section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
+            </div>
+            <div>
+               <div style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div>
+            </div>
+            <div>
+               <div style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div>
+            </div>
+            <div>
+               <section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
+            </div>
+            <div>
+               <div style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div>
+            </div>
+            <div class="min-h-screen w-full relative app-preview">
+               <div class="flex flex-col w-full h-full" id="app-demo">
+                  <div class="bg-white w-full min-h-full overflow-auto">
+                     <div id="component-preview-container">
+                        <div class="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50">
+                      
+                           <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b-2 border-orange-200 fun-shadow">
+                              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                                 <div class="hidden md:flex justify-between items-center h-16">
+                                    <a class="flex items-center gap-3 group" href="index.html">
+                                       <div           class="relative">
+                                          <div           class="w-10 h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center">
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-6 h-6 text-white"          >
+                                                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                                             </svg>
+                                          </div>
+                                          <div           class="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full"></div>
+                                       </div>
+                                       <div          >
+                                          <span           class="text-xl font-black text-gray-800 tracking-wide">ARENALYST</span>
+                                          <div           class="text-xs text-orange-600 font-semibold -mt-1">YOUR HTML5 GAMES ARENA</div>
+                                       </div>
+                                    </a>
+                                    <div           class="flex items-center gap-3">
+                                       <a           href="contactus.html">
+                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 highlight-button text-sm px-4 py-2"          >
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones w-4 h-4 mr-1"          >
+                                                <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
+                                             </svg>
+                                             Contact Us
+                                          </button>
+                                       </a>
+                                       <a           href="cancel.html">
+                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 highlight-button text-sm px-4 py-2"          >
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card w-4 h-4 mr-1"          >
+                                                <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                                                <line x1="2" x2="22" y1="10" y2="10"></line>
+                                             </svg>
+                                             Cancel Subscription
+                                          </button>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div           class="md:hidden flex justify-between items-center h-14">
+                                    <a           class="flex items-center gap-2" href="index.html">
+                                       <div           class="relative">
+                                          <div           class="w-8 h-8 bg-gradient-to-br from-orange-400 to-red-500 rounded-lg flex items-center justify-center">
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-white"          >
+                                                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                                             </svg>
+                                          </div>
+                                          <div           class="absolute -top-0.5 -right-0.5 w-3 h-3 bg-yellow-400 rounded-full"></div>
+                                       </div>
+                                       <div          >
+                                          <span           class="text-lg font-black text-gray-800">ARENALYST</span>
+                                          <div           class="text-xs text-orange-600 font-semibold -mt-1">GAMES ARENA</div>
+                                       </div>
+                                    </a>
+                                    <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md p-2"          >
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-5 h-5"          >
+                                          <path d="M18 6 6 18"></path>
+                                          <path d="m6 6 12 12"></path>
+                                       </svg>
+                                    </button>
+                                 </div>
+                                 <div           class="hidden md:block border-t border-gray-100 bg-white/90">
+                                    <div           class="flex items-center justify-between py-3">
+                                       <div           class="flex items-center space-x-1 overflow-x-auto">
+                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Family">
+                                             <div           class="text-sm font-semibold text-gray-800">Family</div>
+                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                          </a>
+                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Puzzle">
+                                             <div           class="text-sm font-semibold text-gray-800">Puzzle</div>
+                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                          </a>
+                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Action">
+                                             <div           class="text-sm font-semibold text-gray-800">Action</div>
+                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                          </a>
+                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Strategy">
+                                             <div           class="text-sm font-semibold text-gray-800">Strategy</div>
+                                             <div           class="text-xs text-orange-600 font-medium">60+ games</div>
+                                          </a>
+                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="games.html">
+                                             <div           class="text-sm font-semibold text-gray-800">...</div>
+                                          </a>
+                                       </div>
+                                       <div           class="flex items-center gap-3 ml-4">
+                                          <a           href="login.html">
+                                             <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-gray-300 hover:bg-gray-50"          >
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in w-4 h-4 mr-2"          >
+                                                   <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                                                   <polyline points="10 17 15 12 10 7"></polyline>
+                                                   <line x1="15" x2="3" y1="12" y2="12"></line>
+                                                </svg>
+                                                Log In
+                                             </button>
+                                          </a>
+                                          <a href="signup.html" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 py-2 bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white font-semibold px-6"          >JOIN</a>
+                                          <div style="display: none; position: relative;">
+                           <a class="trigger1 cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-gray-300 hover:bg-gray-50 ml-4" >
+                <span class="ml-2 user_name">user_name</span>
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"/>
+                </svg>
+              </a>
+              <div class="dropdown1 absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-150 z-10">
+                <a
+                  href="/?delcookie=1"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
+                  >Log out</a>
+              </div>
+           </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div           class="md:hidden border-t border-gray-200 bg-white">
+                                 <div           class="p-4 space-y-4">
+                                    <div           class="space-y-2">
+                                       <a           class="w-full block" href="contactus.html">
+                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 w-full highlight-button text-sm py-3"          >
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones w-4 h-4 mr-2"          >
+                                                <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
+                                             </svg>
+                                             Contact Us
+                                          </button>
+                                       </a>
+                                       <a           class="w-full block" href="cancel.html">
+                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 w-full highlight-button text-sm py-3"          >
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card w-4 h-4 mr-2"          >
+                                                <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                                                <line x1="2" x2="22" y1="10" y2="10"></line>
+                                             </svg>
+                                             Cancel Subscription
+                                          </button>
+                                       </a>
+                                    </div>
+                                    <div           class="space-y-2">
+                                       <h3           class="font-semibold text-gray-800 text-sm">Categories</h3>
+                                       <div           class="grid grid-cols-2 gap-2">
+                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Family">
+                                             <div           class="text-sm font-semibold text-gray-800">Family</div>
+                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                          </a>
+                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Puzzle">
+                                             <div           class="text-sm font-semibold text-gray-800">Puzzle</div>
+                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                          </a>
+                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Action">
+                                             <div           class="text-sm font-semibold text-gray-800">Action</div>
+                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                          </a>
+                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Strategy">
+                                             <div           class="text-sm font-semibold text-gray-800">Strategy</div>
+                                             <div           class="text-xs text-orange-600 font-medium">60+ games</div>
+                                          </a>
+                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="games.html">
+                                             <div           class="text-sm font-semibold text-gray-800">More...</div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div           class="space-y-2 pt-4 border-t border-gray-200">
+                                       <div           class="space-y-2">
+                                          <a           href="login.html">
+                                             <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"          >
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in w-4 h-4 mr-2"          >
+                                                   <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                                                   <polyline points="10 17 15 12 10 7"></polyline>
+                                                   <line x1="15" x2="3" y1="12" y2="12"></line>
+                                                </svg>
+                                                Log In
+                                             </button>
+                                          </a>
+                                          <a href="signup.html" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white font-semibold py-3"          >JOIN</a>
+                                       </div>
+                                       <div style="display: none;" class="relative inline-block text-left group pt-5 w-full">
+              <a
+                class="trigger2 cursor-pointer flex items-center justify-between px-4 py-2 border rounded text-sm font-medium text-gray-700 border-indigo-200 hover:bg-gray-100"
+              >
+                <span class="ml-2 user_name">user_name</span>
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </a>
+              <div
+                class="dropdown2 absolute w-full right-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-150 z-10"
+              >
+                <a
+                  href="/?delcookie=1"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
+                  >Log out</a>
+              </div>
+            </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </nav>
+                           <main class="flex-1">
+                              <div class="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50">
+                                 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                                    <div class="bg-white rounded-2xl shadow-lg border-2 border-orange-200 p-8">
+                                       <h1 class="text-4xl font-black text-gray-800 mb-8">Terms &amp; Conditions</h1>
+                                       <div class="prose max-w-none">
+                                          <p class="text-gray-600 mb-6">Radinet LTD (11 Karyatidon Street, 2311 Lakatamia, Nicosia, Cyprus).</p>
+                                          <h2 class="text-2xl font-bold text-gray-800 mb-4">Terms Agreement</h2>
+                                          <p class="text-gray-600 mb-6">By engaging with arenalyst.com you accept the conditions outlined in this agreement. If you disagree with any part of these conditions, please do not use the platform or its associated services.</p>
+                                          <p class="text-gray-600 mb-6">Modifications to membership pricing or related terms may occur at our discretion. If significant adjustments are planned, subscribers will be notified at least 21 days before the effective date.</p>
+                                          <p class="text-gray-600 mb-6">Any disputes related to these Terms will be resolved solely under Cypriot law and in its courts.</p>
+                                          <h2 class="text-2xl font-bold text-gray-800 mb-4">Essential Subscription Info</h2>
+                                          <p class="text-gray-600 mb-6">Upon subscribing, a temporary authorization charge of 1 EUR (or the equivalent in your local currency) may be applied to verify your payment method; this amount will be refunded promptly. Detailed pricing information is provided in the "Pricing" section. Following a complimentary 3-day trial period, the subscription will automatically renew every 28 days unless you cancel within the trial. By using this service, you affirm that you are at least 18 years old and agree to comply with these terms.</p>
+                                          <p class="text-gray-600 mb-6">To avoid service interruption, recurring fees are charged automatically unless cancellation is requested via <a href="mailto:support@arenalyst.com" class="text-orange-600 hover:text-orange-700">support@arenalyst.com</a>. Subscription periods are prepaid, and it's your duty to ensure your payment details remain up to date.</p>
+                                          <p class="text-gray-600 mb-6">Important emails from Arenalyst, such as invoices or welcome messages, may not reach you if your email settings block them or direct them to spam. Therefore, use a reliable email service and check your spam folders regularly.</p>
+                                          <h2 class="text-2xl font-bold text-gray-800 mb-4">Accepted Payment Options</h2>
+                                          <p class="text-gray-600 mb-6">Access may be paused if your payment method isn't updated after a failed charge, such as for insufficient funds or an expired card. Any due amount remains your responsibility, and billing dates may shift accordingly. We may continue charging your method, including with details updated by your bank. Additional fees may apply based on your payment type, please confirm with your provider.</p>
+                                          <h2 class="text-2xl font-bold text-gray-800 mb-4">Access to Exclusive Content</h2>
+                                          <p class="text-gray-600 mb-4">Users who enroll in our premium plan unlock a curated library of advanced gaming content not accessible on the standard version of the platform. This access is tied to an auto-renewing membership that continues until it is actively terminated by the user.</p>
+                                          <p class="text-gray-600 mb-4">The standard billing cycle renews every 28 days, and unless cancellation occurs before the renewal date, the associated payment method will be charged accordingly. Details about charges and accepted payment types can be found in the relevant billing sections.</p>
+                                          <p class="text-gray-600 mb-6">To protect service integrity, we retain the authority to block transactions or reject refund claims in the event of any misuse, security concerns, or policy violations.</p>
+                                          <h2 class="text-2xl font-bold text-gray-800 mb-4">Subscription Costs</h2>
+                                          <div class="bg-orange-50 rounded-xl border-2 border-orange-200 p-6 mb-6 overflow-x-auto">
+                                             <table class="w-full border-collapse text-sm">
+                                                <thead     >
+                                                   <tr class="border-b-2 border-orange-200">
+                                                      <th class="text-left py-3 px-2 font-bold text-gray-800">Region</th>
+                                                      <th class="text-left py-3 px-2 font-bold text-gray-800">Verification Charge (Refunded)</th>
+                                                      <th class="text-left py-3 px-2 font-bold text-gray-800">Monthly Fee</th>
+                                                   </tr>
+                                                </thead>
+                                                <tbody     >
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 font-semibold text-gray-800">Default Rate (for unspecified countries)</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 EUR</td>
+                                                      <td class="py-2 px-2 text-orange-600 font-bold">38.95 EUR</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Algeria</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Argentina</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Armenia</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Australia</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 AUD</td>
+                                                      <td class="py-2 px-2 text-gray-600">65.00 AUD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Azerbaijan</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Bahrain</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Brazil</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Canada</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 CAD</td>
+                                                      <td class="py-2 px-2 text-gray-600">59 CAD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Chile</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Colombia</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Denmark</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 DKK</td>
+                                                      <td class="py-2 px-2 text-gray-600">299.00 DKK</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Egypt</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Georgia</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">India</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Indonesia</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Iraq</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Japan</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Kazakhstan</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Kuwait</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Malaysia</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Mexico</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Morocco</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">New Zealand</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 NZD</td>
+                                                      <td class="py-2 px-2 text-gray-600">70.00 NZD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Nigeria</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Oman</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Philippines</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Qatar</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Saudi Arabia</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Senegal</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Singapore</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">South Africa</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">South Korea</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Sweden</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 SEK</td>
+                                                      <td class="py-2 px-2 text-gray-600">500.00 SEK</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Switzerland</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 CHF</td>
+                                                      <td class="py-2 px-2 text-gray-600">40.00 CHF</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Thailand</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">The Emirates</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">The United Kingdom</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 GBP</td>
+                                                      <td class="py-2 px-2 text-gray-600">38.95 GBP</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Tunisia</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Turkey</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">Uruguay</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                   <tr class="border-b border-orange-100">
+                                                      <td class="py-2 px-2 text-gray-600">USA</td>
+                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                          <h2 class="text-2xl font-bold text-gray-800 mb-4">Subscription Cancellation and Refunds</h2>
+                                          <p class="text-gray-600 mb-4">Subscription can be ended at any time by contacting <a href="mailto:support@arenalyst.com" class="text-orange-600 hover:text-orange-700">support@arenalyst.com</a> or using the Contact page. Cancellation takes effect after the current billing cycle, after which account access ends and data may be removed. Note that cancellations aren't allowed within 24 hours of signup due to processing limits.</p>
+                                          <p class="text-gray-600 mb-6">To request a refund, contact <a href="mailto:support@arenalyst.com" class="text-orange-600 hover:text-orange-700">support@arenalyst.com</a>. Refunds take up to 14 days to process and will be returned to the original payment method. Partial subscriptions are non-refundable. Approval of refunds is at our sole discretion and does not guarantee future refunds. Refunds are not available for memberships that have been partially used.</p>
+                                          <h2 class="text-2xl font-bold text-gray-800 mb-4">Data Risk Notice</h2>
+                                          <p class="text-gray-600 mb-6">Arenalyst is not liable for data loss caused by uncontrollable events such as outages, legal actions, disasters, or security breaches. This applies even if only part of the service is affected.</p>
+                                          <div class="mt-8 text-center bg-orange-50 rounded-xl p-6 border-2 border-orange-200">
+                                             <p class="text-lg font-semibold text-orange-600">Welcome aboard! May your time here be fun!</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </main>
+                           <footer class="bg-white border-t-2 border-orange-200 mt-16">
+                              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                                    <div>
+                                       <a class="flex items-center gap-2 md:gap-3 mb-4" href="index.html">
+                                          <div class="w-8 md:w-10 h-8 md:h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center">
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 md:w-6 h-4 md:h-6 text-white">
+                                                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                                             </svg>
+                                          </div>
+                                          <div>
+                                             <span class="text-lg md:text-xl font-black text-gray-800">ARENALYST</span>
+                                             <div class="text-xs text-orange-600 font-semibold -mt-1">YOUR HTML5 GAMES ARENA</div>
+                                          </div>
+                                       </a>
+                                       <p class="text-gray-600 text-sm md:text-base max-w-md mb-4">Your friendly neighborhood games arena! Play and have fun with hundreds of exciting browser games.</p>
+                                       <div class="flex items-center gap-3">
+                                          <div
+                                             class="px-2 px-3 py-1 bg-red rounded items-center justify-center"
+                                             >
+                                             <img style="width:30%;" src="img/visa.png" alt="Visa"/>
+                                          </div>
+                                       </div>
+                                       <div class="flex items-center gap-3" >
+                                          <div
+                                             class="px-2 px-3 py-1"
+                                             >
+                                             <img style="width:70%;" src="img/adress.png" alt="adress" />
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="space-y-2 md:space-y-3">
+                                       <div class="flex flex-col sm:flex-row gap-2 sm:gap-6"><a href="contactus.html" class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base">Contact Customer Support</a><a href="cancel.html" class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base">Cancel Subscription</a></div>
+                                       <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 lg:gap-6">
+                                          <a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="terms">Terms</a><a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="policy.html">Privacy</a>
+                                          <a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="refund.html">Refund Terms</a>
+                                          <a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="sub_terms.html">Subscription Terms</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </footer>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>
+         document.addEventListener('DOMContentLoaded', () => {
+           
+           const nav = document.querySelector('nav.sticky');
+           if (!nav) return;
+         
+           
+           const mobileHeaderRow = nav.querySelector('.md\\:hidden.flex.justify-between.items-center.h-14');
+           const burgerBtn = mobileHeaderRow ? mobileHeaderRow.querySelector('button') : null;
+         
+           
+           const mobilePanel = nav.querySelector('.md\\:hidden.border-t');
+           if (!burgerBtn || !mobilePanel) return;
+         
+           
+           mobilePanel.id = 'mobilePanel';
+           mobilePanel.classList.add('hidden');
+           burgerBtn.setAttribute('aria-controls', 'mobilePanel');
+           burgerBtn.setAttribute('aria-expanded', 'false');
+         
+           
+           const setIcon = (open) => {
+             const svg = burgerBtn.querySelector('svg');
+             if (!svg) return;
+             if (open) {
+               
+               svg.setAttribute('class', 'lucide lucide-x w-5 h-5');
+               svg.innerHTML = '<path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>';
+             } else {
+               
+               svg.setAttribute('class', 'lucide lucide-menu w-5 h-5');
+               svg.innerHTML = '<line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line>';
+             }
+           };
+         
+           
+           const toggleMenu = () => {
+             const nowHidden = mobilePanel.classList.toggle('hidden'); // true если СТАЛ скрытым
+             const isOpen = !nowHidden;
+             burgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+             setIcon(isOpen);
+           };
+         
+           
+           burgerBtn.addEventListener('click', toggleMenu);
+         
+           
+           mobilePanel.addEventListener('click', (e) => {
+             const a = e.target.closest('a');
+             if (a && a.getAttribute('href')?.startsWith('#')) {
+               toggleMenu();
+             }
+           });
+         
+           const mql = window.matchMedia('(min-width: 768px)');
+           const resetToDesktop = () => {
+             if (mql.matches) {
+               mobilePanel.classList.add('hidden');
+               burgerBtn.setAttribute('aria-expanded', 'false');
+               setIcon(false);
+             }
+           };
+           mql.addEventListener('change', resetToDesktop);
+           resetToDesktop(); 
+         
+          
+           setIcon(false);
+         });
+      </script>
+      <script type="text/javascript">
+         document.addEventListener("DOMContentLoaded", () => {
+    const trigger1 = document.querySelector(".trigger1");
+    const dropdown1 = document.querySelector(".dropdown1");
+    const trigger2 = document.querySelector(".trigger2");
+    const dropdown2 = document.querySelector(".dropdown2");
+ 
+    trigger1.addEventListener("click", (e) => {
+        e.preventDefault();
+        dropdown1.classList.toggle("opacity-0");
+        dropdown1.classList.toggle("invisible");
+        dropdown1.classList.toggle("opacity-100");
+        dropdown1.classList.toggle("visible");
+    });
+ 
+    trigger2.addEventListener("click", (e) => {
+        e.preventDefault();
+        dropdown2.classList.toggle("opacity-0");
+        dropdown2.classList.toggle("invisible");
+        dropdown2.classList.toggle("opacity-100");
+        dropdown2.classList.toggle("visible");
+    });
+ 
+    document.addEventListener("click", (e) => {
+        if (!trigger1.parentElement.contains(e.target)) {
+            dropdown1.classList.add("opacity-0", "invisible");
+            dropdown1.classList.remove("opacity-100", "visible");
+        }
+ 
+        if (!trigger2.parentElement.contains(e.target)) {
+            dropdown2.classList.add("opacity-0", "invisible");
+            dropdown2.classList.remove("opacity-100", "visible");
+        }
+    });
+});
+      </script>
+<script src="'js/jquery-3.7.1.min.js"></script>
+   </body>
+</html>

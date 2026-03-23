@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html data->
+   <head>
+      <meta name="robots" content="noindex" />
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Arenalyst</title>
+      <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <link href="css/vendors.2b28d5da.css" rel="stylesheet">
+      <link href="css/main.a70e25f9.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet" />
+      <link href="src/output.css" rel="stylesheet"/>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+     
+   </head>
+   <style     >
+
+      .fun-shadow {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .category-tab {
+      transition: all 0.2s ease;
+      }
+      .category-tab:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+      .arena-gradient {
+      background: linear-gradient(135deg, #FFE4B5 0%, #FFDAB9 50%, #FFB6C1 100%);
+      }
+      .highlight-button {
+      background: linear-gradient(135deg, #FF6B35, #F7931E);
+      color: white;
+      font-weight: bold;
+      }
+      .highlight-button:hover {
+      background: linear-gradient(135deg, #E55A2B, #D17D1A);
+      }
+   </style>
+   <style>
+      #mobileMenu.opacity-100 { opacity: 1; }
+   </style>
+   <body cz-shortcut-listen="true">
+      <div id="root">
+         <div class="font-sans">
+            <div>
+               <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
+                  <ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol>
+               </div>
+            </div>
+            <div>
+               <section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
+            </div>
+            <div>
+               <div style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div>
+            </div>
+            <div>
+               <div style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div>
+            </div>
+            <div>
+               <section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
+            </div>
+            <div>
+               <div style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div>
+            </div>
+            <div class="min-h-screen w-full relative app-preview">
+               <div class="flex flex-col w-full h-full" id="app-demo">
+                  <div class="bg-white w-full min-h-full overflow-auto">
+                     <div id="component-preview-container">
+                        <div      class="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50">
+                           <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b-2 border-orange-200 fun-shadow">
+                              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                                 <div class="hidden md:flex justify-between items-center h-16">
+                                    <a class="flex items-center gap-3 group" href="index.html">
+                                       <div           class="relative">
+                                          <div           class="w-10 h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center">
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-6 h-6 text-white"          >
+                                                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                                             </svg>
+                                          </div>
+                                          <div           class="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full"></div>
+                                       </div>
+                                       <div          >
+                                          <span           class="text-xl font-black text-gray-800 tracking-wide">ARENALYST</span>
+                                          <div           class="text-xs text-orange-600 font-semibold -mt-1">YOUR HTML5 GAMES ARENA</div>
+                                       </div>
+                                    </a>
+                                    <div           class="flex items-center gap-3">
+                                       <a           href="contactus.html">
+                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 highlight-button text-sm px-4 py-2"          >
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones w-4 h-4 mr-1"          >
+                                                <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
+                                             </svg>
+                                             Contact Us
+                                          </button>
+                                       </a>
+                                       <a           href="cancel.html">
+                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 highlight-button text-sm px-4 py-2"          >
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card w-4 h-4 mr-1"          >
+                                                <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                                                <line x1="2" x2="22" y1="10" y2="10"></line>
+                                             </svg>
+                                             Cancel Subscription
+                                          </button>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div           class="md:hidden flex justify-between items-center h-14">
+                                    <a class="flex items-center gap-2" href="index.html">
+                                       <div class="relative">
+                                          <div class="w-8 h-8 bg-gradient-to-br from-orange-400 to-red-500 rounded-lg flex items-center justify-center">
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-white">
+                                                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                                             </svg>
+                                          </div>
+                                          <div           class="absolute -top-0.5 -right-0.5 w-3 h-3 bg-yellow-400 rounded-full"></div>
+                                       </div>
+                                       <div          >
+                                          <span           class="text-lg font-black text-gray-800">ARENALYST</span>
+                                          <div           class="text-xs text-orange-600 font-semibold -mt-1">GAMES ARENA</div>
+                                       </div>
+                                    </a>
+                                    <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md p-2"          >
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-5 h-5"          >
+                                          <path d="M18 6 6 18"></path>
+                                          <path d="m6 6 12 12"></path>
+                                       </svg>
+                                    </button>
+                                 </div>
+                                 <div           class="hidden md:block border-t border-gray-100 bg-white/90">
+                                    <div           class="flex items-center justify-between py-3">
+                                       <div           class="flex items-center space-x-1 overflow-x-auto">
+                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Family">
+                                             <div           class="text-sm font-semibold text-gray-800">Family</div>
+                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                          </a>
+                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Puzzle">
+                                             <div           class="text-sm font-semibold text-gray-800">Puzzle</div>
+                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                          </a>
+                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Action">
+                                             <div           class="text-sm font-semibold text-gray-800">Action</div>
+                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                          </a>
+                                          <a class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Strategy">
+                                             <div  class="text-sm font-semibold text-gray-800">Strategy</div>
+                                             <div class="text-xs text-orange-600 font-medium">60+ games</div>
+                                          </a>
+                                          <a class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="games.html">
+                                             <div           class="text-sm font-semibold text-gray-800">...</div>
+                                          </a>
+                                       </div>
+                                       <div           class="flex items-center gap-3 ml-4">
+                                          <a           href="login.html">
+                                             <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-gray-300 hover:bg-gray-50"          >
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in w-4 h-4 mr-2"          >
+                                                   <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                                                   <polyline points="10 17 15 12 10 7"></polyline>
+                                                   <line x1="15" x2="3" y1="12" y2="12"></line>
+                                                </svg>
+                                                Log In
+                                             </button>
+                                          </a>
+                                          <a href="signup.html" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 py-2 bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white font-semibold px-6"          >JOIN</a>
+                                          <div style="display: none; position: relative;">
+                           <a class="trigger1 cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-gray-300 hover:bg-gray-50 ml-4" >
+                <span class="ml-2 user_name">user_name</span>
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"/>
+                </svg>
+              </a>
+              <div class="dropdown1 absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-150 z-10">
+                <a
+                  href="/?delcookie=1"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
+                  >Log out</a>
+              </div>
+           </div>
+                                         
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div           class="md:hidden border-t border-gray-200 bg-white">
+                                 <div           class="p-4 space-y-4">
+                                    <div           class="space-y-2">
+                                       <a           class="w-full block" href="contactus.html">
+                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 w-full highlight-button text-sm py-3"          >
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones w-4 h-4 mr-2"          >
+                                                <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
+                                             </svg>
+                                             Contact Us
+                                          </button>
+                                       </a>
+                                       <a           class="w-full block" href="cancel.html">
+                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 w-full highlight-button text-sm py-3"          >
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card w-4 h-4 mr-2"          >
+                                                <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                                                <line x1="2" x2="22" y1="10" y2="10"></line>
+                                             </svg>
+                                             Cancel Subscription
+                                          </button>
+                                       </a>
+                                    </div>
+                                    <div           class="space-y-2">
+                                       <h3           class="font-semibold text-gray-800 text-sm">Categories</h3>
+                                       <div           class="grid grid-cols-2 gap-2">
+                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Family">
+                                             <div           class="text-sm font-semibold text-gray-800">Family</div>
+                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                          </a>
+                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Puzzle">
+                                             <div           class="text-sm font-semibold text-gray-800">Puzzle</div>
+                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                          </a>
+                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Action">
+                                             <div           class="text-sm font-semibold text-gray-800">Action</div>
+                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                          </a>
+                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Strategy">
+                                             <div           class="text-sm font-semibold text-gray-800">Strategy</div>
+                                             <div           class="text-xs text-orange-600 font-medium">60+ games</div>
+                                          </a>
+                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="games.html">
+                                             <div           class="text-sm font-semibold text-gray-800">More...</div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div           class="space-y-2 pt-4 border-t border-gray-200">
+                                       <div           class="space-y-2">
+                                          <a           href="login.html">
+                                             <button class="login-btn inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"          >
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in w-4 h-4 mr-2"          >
+                                                   <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                                                   <polyline points="10 17 15 12 10 7"></polyline>
+                                                   <line x1="15" x2="3" y1="12" y2="12"></line>
+                                                </svg>
+                                                Log In
+                                             </button>
+                                          </a>
+                                          <a href="signup.html" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white font-semibold py-3"          >JOIN</a>
+                                         
+                                       </div>
+                                                         <div style="display: none;" class="relative inline-block text-left group pt-5 w-full">
+              <a
+                class="trigger2 cursor-pointer flex items-center justify-between px-4 py-2 border rounded text-sm font-medium text-gray-700 border-indigo-200 hover:bg-gray-100"
+              >
+                <span class="ml-2 user_name">user_name</span>
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </a>
+              <div
+                class="dropdown2 absolute w-full right-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-150 z-10"
+              >
+                <a
+                  href="/?delcookie=1"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
+                  >Log out</a>
+              </div>
+            </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </nav>
+                           <main      class="flex-1">
+                              <div      class="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50">
+                                 <div      class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                                    <div      class="bg-white rounded-2xl shadow-lg border-2 border-orange-200 p-8">
+                                       <div      class="text-center mb-8">
+                                          <div      class="flex justify-center mb-4">
+                                             <div      class="p-4 bg-gradient-to-br from-orange-300 to-red-400 rounded-2xl">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones w-12 h-12 text-white"     >
+                                                   <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
+                                                </svg>
+                                             </div>
+                                          </div>
+                                          <h1  class="text-3xl font-black text-gray-800 mb-2">Contact Us</h1>
+                                          <p      class="text-gray-600">We're here to help! Get in touch with our support team.</p>
+                                       </div>
+                                       <form method="post" class="space-y-6">
+                                          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                             <div>
+                                                <label      class="block text-sm font-medium text-gray-700 mb-2">Name:</label>
+                                                <input type="text" class="flex h-10 bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-full border-2 border-gray-200 focus:border-orange-400 rounded-xl"      required="" value="" id="name"
+                                                   name="name" placeholder="Enter your name">
+                                             </div>
+                                             <div><label class="block text-sm font-medium text-gray-700 mb-2">Email:</label>
+                                                <input type="email" class="flex h-10 bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-full border-2 border-gray-200 focus:border-orange-400 rounded-xl"      type="text"
+                                                   id="email"
+                                                   class="text"
+                                                   name="email"
+                                                   placeholder="Enter your email"
+                                                   required="">
+                                             </div>
+                                          </div>
+                                          <div      class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                             <div><label class="block text-sm font-medium text-gray-700 mb-2">Phone:</label><input type="tel" class="flex h-10 bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-full border-2 border-gray-200 focus:border-orange-400 rounded-xl"      type="text"
+                                                id="phone"
+                                                class="text"
+                                                name="phone"
+                                                placeholder="Enter your phone number"
+                                                required=""></div>
+                                             <div     ><label      class="block text-sm font-medium text-gray-700 mb-2">Subject:</label><input type="text" class="flex h-10 bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-full border-2 border-gray-200 focus:border-orange-400 rounded-xl"      type="text"
+                                                id="subject"
+                                                class="text"
+                                                name="subject"
+                                                placeholder="Enter subject"
+                                                required=""></div>
+                                          </div>
+                                          <div     ><label      class="block text-sm font-medium text-gray-700 mb-2">Message:</label><textarea class="flex min-h-[80px] bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full border-2 border-gray-200 focus:border-orange-400 rounded-xl h-32"      name="message"
+                                             id="message"
+                                             placeholder="Enter your message"
+                                             required=""></textarea></div>
+                                          <div>
+                                                 <div class="mb-3">
+                  <label for="captcha" class="form-label">Captcha</label>
+                  <div class="flex align-items-center">
+                    <img
+                      class="me-3"
+                      src="data:image/gif;base64,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
+2Q==
+"
+                      width="195"
+                      height="50"
+                      style="width: 195px"
+                    />
+                    <input
+                      type="text"
+                      name="captcha"
+                      id="captcha"
+                      class="flex h-15 bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-full border-2 border-gray-200 focus:border-orange-400 rounded-xl"
+                      placeholder="Captcha"
+                      required
+                      maxlength="6"
+                      pattern="[A-Za-z0-9]{6}"
+                    />
+                  </div>
+                </div>
+
+                                             
+                                          </div>
+                                          <div class="pt-6">
+                                             <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white font-bold py-4 rounded-xl text-lg"      type="submit"
+                                                value="Send Message">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones w-5 h-5 mr-2"     >
+                                                   <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
+                                                </svg>
+                                                Send Message
+                                             </button>
+                                          </div>
+                                          <div      class="text-center text-sm text-gray-500 pt-4">
+                                             <p     ><strong     >Working hours:</strong> Monday-Friday 07:00 AM - 4:00 PM (GMT)</p>
+                                          </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                           </main>
+                           <footer      class="bg-white border-t-2 border-orange-200 mt-16">
+                              <div      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+                                 <div      class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                                    <div     >
+                                       <a      class="flex items-center gap-2 md:gap-3 mb-4" href="index.html">
+                                          <div      class="w-8 md:w-10 h-8 md:h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center">
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 md:w-6 h-4 md:h-6 text-white"     >
+                                                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                                             </svg>
+                                          </div>
+                                          <div     >
+                                             <span      class="text-lg md:text-xl font-black text-gray-800">ARENALYST</span>
+                                             <div      class="text-xs text-orange-600 font-semibold -mt-1">YOUR HTML5 GAMES ARENA</div>
+                                          </div>
+                                       </a>
+                                       <p class="text-gray-600 text-sm md:text-base max-w-md mb-4">Your friendly neighborhood games arena! Play and have fun with hundreds of exciting browser games.</p>
+                                       <div class="flex items-center gap-3">
+                                          <div
+                                             class="px-2 px-3 py-1 bg-red rounded items-center justify-center"
+                                             >
+                                             <img style="width:30%;" src="img/visa.png" alt="Visa"/>
+                                          </div>
+                                       </div>
+                                       <div class="flex items-center gap-3" >
+                                          <div
+                                             class="px-2 px-3 py-1"
+                                             >
+                                             <img style="width:70%;" src="img/adress.png" alt="adress" />
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="space-y-2 md:space-y-3">
+                                       <div class="flex flex-col sm:flex-row gap-2 sm:gap-6"><a href="contactus.html" class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base">Contact Customer Support</a><a href="cancel.html" class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base">Cancel Subscription</a></div>
+                                       <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 lg:gap-6">
+                                          <a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="terms">Terms</a><a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="policy.html">Privacy</a>
+                                          <a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="refund.html">Refund Terms</a>
+                                          <a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="sub_terms.html">Subscription Terms</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </footer>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+     
+      <script type="module" src="./js/main.js"></script>
+      <script>
+         document.addEventListener('DOMContentLoaded', () => {
+           
+           const nav = document.querySelector('nav.sticky');
+           if (!nav) return;
+         
+           
+           const mobileHeaderRow = nav.querySelector('.md\\:hidden.flex.justify-between.items-center.h-14');
+           const burgerBtn = mobileHeaderRow ? mobileHeaderRow.querySelector('button') : null;
+         
+           
+           const mobilePanel = nav.querySelector('.md\\:hidden.border-t');
+           if (!burgerBtn || !mobilePanel) return;
+         
+           
+           mobilePanel.id = 'mobilePanel';
+           mobilePanel.classList.add('hidden');
+           burgerBtn.setAttribute('aria-controls', 'mobilePanel');
+           burgerBtn.setAttribute('aria-expanded', 'false');
+         
+           
+           const setIcon = (open) => {
+             const svg = burgerBtn.querySelector('svg');
+             if (!svg) return;
+             if (open) {
+               
+               svg.setAttribute('class', 'lucide lucide-x w-5 h-5');
+               svg.innerHTML = '<path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>';
+             } else {
+               
+               svg.setAttribute('class', 'lucide lucide-menu w-5 h-5');
+               svg.innerHTML = '<line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line>';
+             }
+           };
+         
+           
+           const toggleMenu = () => {
+             const nowHidden = mobilePanel.classList.toggle('hidden'); // true если СТАЛ скрытым
+             const isOpen = !nowHidden;
+             burgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+             setIcon(isOpen);
+           };
+         
+           
+           burgerBtn.addEventListener('click', toggleMenu);
+         
+           
+           mobilePanel.addEventListener('click', (e) => {
+             const a = e.target.closest('a');
+             if (a && a.getAttribute('href')?.startsWith('#')) {
+               toggleMenu();
+             }
+           });
+         
+           const mql = window.matchMedia('(min-width: 768px)');
+           const resetToDesktop = () => {
+             if (mql.matches) {
+               mobilePanel.classList.add('hidden');
+               burgerBtn.setAttribute('aria-expanded', 'false');
+               setIcon(false);
+             }
+           };
+           mql.addEventListener('change', resetToDesktop);
+           resetToDesktop(); 
+         
+          
+           setIcon(false);
+         });
+      </script>
+      <script type="text/javascript">
+         document.addEventListener("DOMContentLoaded", () => {
+    const trigger1 = document.querySelector(".trigger1");
+    const dropdown1 = document.querySelector(".dropdown1");
+    const trigger2 = document.querySelector(".trigger2");
+    const dropdown2 = document.querySelector(".dropdown2");
+ 
+    trigger1.addEventListener("click", (e) => {
+        e.preventDefault();
+        dropdown1.classList.toggle("opacity-0");
+        dropdown1.classList.toggle("invisible");
+        dropdown1.classList.toggle("opacity-100");
+        dropdown1.classList.toggle("visible");
+    });
+ 
+    trigger2.addEventListener("click", (e) => {
+        e.preventDefault();
+        dropdown2.classList.toggle("opacity-0");
+        dropdown2.classList.toggle("invisible");
+        dropdown2.classList.toggle("opacity-100");
+        dropdown2.classList.toggle("visible");
+    });
+ 
+    document.addEventListener("click", (e) => {
+        if (!trigger1.parentElement.contains(e.target)) {
+            dropdown1.classList.add("opacity-0", "invisible");
+            dropdown1.classList.remove("opacity-100", "visible");
+        }
+ 
+        if (!trigger2.parentElement.contains(e.target)) {
+            dropdown2.classList.add("opacity-0", "invisible");
+            dropdown2.classList.remove("opacity-100", "visible");
+        }
+    });
+});
+      </script>
+<script src="'js/jquery-3.7.1.min.js"></script>
+   </body>
+</html>

@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html >
+   <head>
+      <meta name="robots" content="noindex" />
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Arenalyst</title>
+      <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+      <link href="src/output.css" rel="stylesheet"/>
+     
+       <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+          integrity="sha256-o88Awf4c3NjxJXcU7s/8tdHcGpX5tGMWzjE6xF2XYQc="
+          crossorigin="anonymous"></script>
+    
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <link href="css/vendors.2b28d5da.css" rel="stylesheet">
+      <link href="css/main.a70e25f9.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet" />
+      
+     
+      
+   </head>
+   <body cz-shortcut-listen="true">
+      <div id="root">
+      <div class="font-sans">
+         <div>
+            <div role="region" label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
+               <ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol>
+            </div>
+         </div>
+         <div>
+            <section label="Notifications alt+T" tabindex="-1" live="polite" relevant="additions text" atomic="false"></section>
+         </div>
+         <div>
+            <div style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div>
+         </div>
+         <div>
+            <div style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div>
+         </div>
+         <div>
+            <section label="Notifications alt+T" tabindex="-1" live="polite" relevant="additions text" atomic="false"></section>
+         </div>
+         <div>
+            <div style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div>
+         </div>
+         <div class="min-h-screen w-full relative app-preview">
+            <div class="flex flex-col w-full h-full" id="app-demo">
+               <div class="bg-white w-full min-h-full overflow-auto">
+                  <div >
+                     <div class="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50">
+                        <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b-2 border-orange-200 fun-shadow">
+                           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                              <div class="hidden md:flex justify-between items-center h-16">
+                                 <a class="flex items-center gap-3 group" href="index.html">
+                                    <div           class="relative">
+                                       <div           class="w-10 h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-6 h-6 text-white"          >
+                                             <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                                          </svg>
+                                       </div>
+                                       <div           class="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full"></div>
+                                    </div>
+                                    <div          >
+                                       <span           class="text-xl font-black text-gray-800 tracking-wide">ARENALYST</span>
+                                       <div           class="text-xs text-orange-600 font-semibold -mt-1">YOUR HTML5 GAMES ARENA</div>
+                                    </div>
+                                 </a>
+                                 <div           class="flex items-center gap-3">
+                                    <a           href="contactus.html">
+                                       <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 highlight-button text-sm px-4 py-2"          >
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones w-4 h-4 mr-1"          >
+                                             <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
+                                          </svg>
+                                          Contact Us
+                                       </button>
+                                    </a>
+                                    <a           href="cancel.html">
+                                       <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 highlight-button text-sm px-4 py-2"          >
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card w-4 h-4 mr-1"          >
+                                             <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                                             <line x1="2" x2="22" y1="10" y2="10"></line>
+                                          </svg>
+                                          Cancel Subscription
+                                       </button>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div           class="md:hidden flex justify-between items-center h-14">
+                                 <a           class="flex items-center gap-2" href="index.html">
+                                    <div           class="relative">
+                                       <div           class="w-8 h-8 bg-gradient-to-br from-orange-400 to-red-500 rounded-lg flex items-center justify-center">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-white"          >
+                                             <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                                          </svg>
+                                       </div>
+                                       <div           class="absolute -top-0.5 -right-0.5 w-3 h-3 bg-yellow-400 rounded-full"></div>
+                                    </div>
+                                    <div          >
+                                       <span           class="text-lg font-black text-gray-800">ARENALYST</span>
+                                       <div           class="text-xs text-orange-600 font-semibold -mt-1">GAMES ARENA</div>
+                                    </div>
+                                 </a>
+                                 <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md p-2"          >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-5 h-5"          >
+                                       <path d="M18 6 6 18"></path>
+                                       <path d="m6 6 12 12"></path>
+                                    </svg>
+                                 </button>
+                              </div>
+                              <div           class="hidden md:block border-t border-gray-100 bg-white/90">
+                                 <div           class="flex items-center justify-between py-3">
+                                    <div           class="flex items-center space-x-1 overflow-x-auto">
+                                       <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Family">
+                                          <div           class="text-sm font-semibold text-gray-800">Family</div>
+                                          <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                       </a>
+                                       <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=gamess&amp;cat=Puzzle">
+                                          <div           class="text-sm font-semibold text-gray-800">Puzzle</div>
+                                          <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                       </a>
+                                       <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=gamess&amp;cat=Action">
+                                          <div           class="text-sm font-semibold text-gray-800">Action</div>
+                                          <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                       </a>
+                                       <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=gamess&amp;cat=Strategy">
+                                          <div           class="text-sm font-semibold text-gray-800">Strategy</div>
+                                          <div           class="text-xs text-orange-600 font-medium">60+ games</div>
+                                       </a>
+                                       <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="games.html">
+                                          <div           class="text-sm font-semibold text-gray-800">...</div>
+                                       </a>
+                                    </div>
+                                    <div           class="flex items-center gap-3 ml-4">
+                                       <a           href="login.html">
+                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-gray-300 hover:bg-gray-50"          >
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in w-4 h-4 mr-2"          >
+                                                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                                                <polyline points="10 17 15 12 10 7"></polyline>
+                                                <line x1="15" x2="3" y1="12" y2="12"></line>
+                                             </svg>
+                                             Log In
+                                          </button>
+                                       </a>
+                                       <a href="signup.html" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 py-2 bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white font-semibold px-6"          >JOIN</a>
+                                       <div style="display: none;position: relative;">
+                           <a class="trigger1 cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-gray-300 hover:bg-gray-50 ml-4" >
+                <span class="ml-2 user_name">user_name</span>
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"/>
+                </svg>
+              </a>
+              <div class="dropdown1 absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-150 z-10">
+                <a
+                  href="/?delcookie=1"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
+                  >Log out</a>
+              </div>
+           </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div           class="md:hidden border-t border-gray-200 bg-white">
+                              <div           class="p-4 space-y-4">
+                                 <div           class="space-y-2">
+                                    <a           class="w-full block" href="contactus.html">
+                                       <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 w-full highlight-button text-sm py-3"          >
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones w-4 h-4 mr-2"          >
+                                             <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
+                                          </svg>
+                                          Contact Us
+                                       </button>
+                                    </a>
+                                    <a           class="w-full block" href="cancel.html">
+                                       <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 w-full highlight-button text-sm py-3"          >
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card w-4 h-4 mr-2"          >
+                                             <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                                             <line x1="2" x2="22" y1="10" y2="10"></line>
+                                          </svg>
+                                          Cancel Subscription
+                                       </button>
+                                    </a>
+                                 </div>
+                                 <div           class="space-y-2">
+                                    <h3           class="font-semibold text-gray-800 text-sm">Categories</h3>
+                                    <div           class="grid grid-cols-2 gap-2">
+                                       <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Family">
+                                          <div           class="text-sm font-semibold text-gray-800">Family</div>
+                                          <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                       </a>
+                                       <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=gamess&amp;cat=Puzzle">
+                                          <div           class="text-sm font-semibold text-gray-800">Puzzle</div>
+                                          <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                       </a>
+                                       <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=gamess&amp;cat=Action">
+                                          <div           class="text-sm font-semibold text-gray-800">Action</div>
+                                          <div           class="text-xs text-orange-600 font-medium">100+ games</div>
+                                       </a>
+                                       <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=gamess&amp;cat=Strategy">
+                                          <div           class="text-sm font-semibold text-gray-800">Strategy</div>
+                                          <div           class="text-xs text-orange-600 font-medium">60+ games</div>
+                                       </a>
+                                       <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="games.html">
+                                          <div           class="text-sm font-semibold text-gray-800">More...</div>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div           class="space-y-2 pt-4 border-t border-gray-200">
+                                    <div           class="space-y-2">
+                                       <a           href="login.html">
+                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"          >
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in w-4 h-4 mr-2"          >
+                                                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                                                <polyline points="10 17 15 12 10 7"></polyline>
+                                                <line x1="15" x2="3" y1="12" y2="12"></line>
+                                             </svg>
+                                             Log In
+                                          </button>
+                                       </a>
+                                       <a href="signup.html" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white font-semibold py-3"          >JOIN</a>
+                                    </div>
+                                                          <div style="display: none;" class="relative inline-block text-left group pt-5 w-full">
+              <a
+                class="trigger2 cursor-pointer flex items-center justify-between px-4 py-2 border rounded text-sm font-medium text-gray-700 border-indigo-200 hover:bg-gray-100"
+              >
+                <span class="ml-2 user_name">user_name</span>
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </a>
+              <div
+                class="dropdown2 absolute w-full right-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-150 z-10"
+              >
+                <a
+                  href="/?delcookie=1"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
+                  >Log out</a>
+              </div>
+            </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </nav>
+                        <main class="flex-1">
+                           <div class="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50">
+                              <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                                 <div class="bg-white rounded-2xl shadow-lg border-2 border-orange-200 p-8">
+                                    <div class="text-center mb-8">
+                                       <div  linenumber="51" visual-selector-id="pages/Join51" source-location="pages/Join:51:12" dynamic-content="false" class="flex justify-center mb-4">
+                                          <div class="p-4 bg-gradient-to-br from-orange-300 to-red-400 rounded-2xl">
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-crown w-12 h-12 text-white" >
+                                                <path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"></path>
+                                                <path d="M5 21h14"></path>
+                                             </svg>
+                                          </div>
+                                       </div>
+                                       <h1  class="text-3xl font-black text-gray-800 mb-2">Sign Up and join our VIP Membership now</h1>
+                                       <p class="text-gray-600">Get instant access to hundreds of premium games!</p>
+                                    </div>
+                                    <form method="post" class="space-y-6 signup-form-container">
+                                       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                          <div>
+                                             <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                             <input type="text" class="flex h-10 bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-full border-2 border-gray-200 focus:border-orange-400 rounded-xl" type="text"
+                                                id="name"
+                                                name="name"
+                                                placeholder="Enter your first name"
+                                                required="" >
+                                          </div>
+                                          <div>
+                                             <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                             <input type="text" class="flex h-10 bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-full border-2 border-gray-200 focus:border-orange-400 rounded-xl"type="text"
+                                                id="lname"
+                                                name="lname"
+                                                placeholder="Enter your last name"
+                                                required="">
+                                          </div>
+                                       </div>
+                                       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                          <div>
+                                             <label class="block text-sm font-medium text-gray-700 mb-2">Address</label><input type="text" class="flex h-10 bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-full border-2 border-gray-200 focus:border-orange-400 rounded-xl" type="text"
+                                                id="address"
+                                                name="address"
+                                                placeholder="Enter your street address"
+                                                required="">
+                                          </div>
+                                          <div class="block text-sm font-medium text-gray-700 mb-2" for="code">
+                                             <label class="block text-sm font-medium text-gray-700 mb-2">Postal Code</label>
+                                             <input type="text" class="flex h-10 bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-full border-2 border-gray-200 focus:border-orange-400 rounded-xl" id="code" name="post_code" placeholder="Enter postal code" required="">
+                                          </div>
+                                       </div>
+                                       <div >
+                                          <label class="block text-sm font-medium text-gray-700 mb-2" for="city">City</label>
+                                          <input type="text" class="flex h-10 bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-full border-2 border-gray-200 focus:border-orange-400 rounded-xl" type="text"
+                                             id="city"
+                                             name="city"
+                                             placeholder="Enter your city"
+                                             required="">
+                                       </div>
+                                       <div>
+                                          <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label><input type="tel" class="flex h-10 bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-full border-2 border-gray-200 focus:border-orange-400 rounded-xl" type="text"
+                                             id="phone"
+                                             name="phone"
+                                             placeholder="Enter your phone number"
+                                             required="">
+                                       </div>
+                                       <div>
+                                          <label class="block text-sm font-medium text-gray-700 mb-2" for="country">Country</label>
+                                          <select class="flex h-10 items-center justify-between bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 [&amp;&gt;span]:line-clamp-1 w-full border-2 border-gray-200 focus:border-orange-400 rounded-xl" id="country"
+                                             name="country">
+                                             <span  style="pointer-events: none;">Select your country</span>
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 opacity-50" hidden="true">
+                                                <path d="m6 9 6 6 6-6"></path>
+                                             </svg>
+                                             <option value="0">Country</option>
+                                             <option value="1">Andorra</option>
+                                             <option value="2">United Arab Emirates</option>
+                                             <option value="3">Afghanistan</option>
+                                             <option value="4">Antigua and Barbuda</option>
+                                             <option value="5">Anguilla</option>
+                                             <option value="6">Albania</option>
+                                             <option value="7">Armenia</option>
+                                             <option value="8">Angola</option>
+                                             <option value="9">Non-spec Asia Pas Location</option>
+                                             <option value="10">Antarctica</option>
+                                             <option value="11">Argentina</option>
+                                             <option value="12">Samoa (American)</option>
+                                             <option value="13">Austria</option>
+                                             <option value="14">Australia</option>
+                                             <option value="15">Aruba</option>
+                                             <option value="16">Aland Islands</option>
+                                             <option value="17">Azerbaijan</option>
+                                             <option value="18">Bosnia and Herzegowina</option>
+                                             <option value="19">Barbados</option>
+                                             <option value="20">Bangladesh</option>
+                                             <option value="21">Belgium</option>
+                                             <option value="22">Burkina Faso</option>
+                                             <option value="23">Bulgaria</option>
+                                             <option value="24">Bahrain</option>
+                                             <option value="25">Burundi</option>
+                                             <option value="26">Benin</option>
+                                             <option value="27">Bermuda</option>
+                                             <option value="28">Brunei Darussalam</option>
+                                             <option value="29">Bolivia</option>
+                                             <option value="30">Bonaire; Sint Eustatius; Saba</option>
+                                             <option value="31">Brazil</option>
+                                             <option value="32">Bahamas</option>
+                                             <option value="33">Bhutan</option>
+                                             <option value="34">Botswana</option>
+                                             <option value="35">Belarus</option>
+                                             <option value="36">Belize</option>
+                                             <option value="37">Canada</option>
+                                             <option value="38">Congo</option>
+                                             <option value="39">Central African Republic</option>
+                                             <option value="40">Congo</option>
+                                             <option value="41">Switzerland</option>
+                                             <option value="42">Ivory coast</option>
+                                             <option value="43">Cook Islands</option>
+                                             <option value="44">Chile</option>
+                                             <option value="45">Cameroon</option>
+                                             <option value="46">China</option>
+                                             <option value="47">Colombia</option>
+                                             <option value="48">Costa Rica</option>
+                                             <option value="49">Cuba</option>
+                                             <option value="50">Cape Verde</option>
+                                             <option value="51">Curacao</option>
+                                             <option value="52">Cyprus</option>
+                                             <option value="53">Czech Republic</option>
+                                             <option value="54">Germany</option>
+                                             <option value="55">Djibouti</option>
+                                             <option value="56">Denmark</option>
+                                             <option value="57">Dominica</option>
+                                             <option value="58">Dominican Republic</option>
+                                             <option value="59">Algeria</option>
+                                             <option value="60">Ecuador</option>
+                                             <option value="61">Estonia</option>
+                                             <option value="62">Egypt</option>
+                                             <option value="63">Eritrea</option>
+                                             <option value="64">Spain</option>
+                                             <option value="65">Ethiopia</option>
+                                             <option value="66">Finland</option>
+                                             <option value="67">Fiji</option>
+                                             <option value="68">Falkland Islands (MALVINAS)</option>
+                                             <option value="69">Micronesia</option>
+                                             <option value="70">Faroe Islands</option>
+                                             <option value="71">France</option>
+                                             <option value="72">Gabon</option>
+                                             <option value="73">United Kingdom</option>
+                                             <option value="74">Grenada</option>
+                                             <option value="75">Georgia</option>
+                                             <option value="76">French Guiana</option>
+                                             <option value="77">Guernsey</option>
+                                             <option value="78">Ghana</option>
+                                             <option value="79">Gibraltar</option>
+                                             <option value="80">Greenland</option>
+                                             <option value="81">Gambia</option>
+                                             <option value="82">Guinea</option>
+                                             <option value="83">Guadeloupe</option>
+                                             <option value="84">Equatorial Guinea</option>
+                                             <option value="85">Greece</option>
+                                             <option value="86">Guatemala</option>
+                                             <option value="87">Guam</option>
+                                             <option value="88">Guinea-bissau</option>
+                                             <option value="89">Guyana</option>
+                                             <option value="90">Hong Kong</option>
+                                             <option value="91">Honduras</option>
+                                             <option value="92">Croatia</option>
+                                             <option value="93">Haiti</option>
+                                             <option value="94">Hungary</option>
+                                             <option value="95">Indonesia</option>
+                                             <option value="96">Ireland</option>
+                                             <option value="97">Israel</option>
+                                             <option value="98">Isle of Man</option>
+                                             <option value="99">India</option>
+                                             <option value="100">British Indian Ocean Territory</option>
+                                             <option value="101">Iraq</option>
+                                             <option value="102">Iran</option>
+                                             <option value="103">Iceland</option>
+                                             <option value="104">Italy</option>
+                                             <option value="105">Jersey</option>
+                                             <option value="106">Jamaica</option>
+                                             <option value="107">Jordan</option>
+                                             <option value="108">Japan</option>
+                                             <option value="109">Kenya</option>
+                                             <option value="110">Kyrgyzstan</option>
+                                             <option value="111">Cambodia</option>
+                                             <option value="112">Kiribati</option>
+                                             <option value="113">Comoros</option>
+                                             <option value="114">Saint Kitts and Nevis</option>
+                                             <option value="115">
+                                                Korea Democratic People's Republic of
+                                             </option>
+                                             <option value="116">Korea Republic of</option>
+                                             <option value="117">Kuwait</option>
+                                             <option value="118">Cayman Islands</option>
+                                             <option value="119">Kazakhstan</option>
+                                             <option value="120">Lao</option>
+                                             <option value="121">Lebanon</option>
+                                             <option value="122">Saint Lucia</option>
+                                             <option value="123">Liechtenstein</option>
+                                             <option value="124">Sri Lanka</option>
+                                             <option value="125">Liberia</option>
+                                             <option value="126">Lesotho</option>
+                                             <option value="127">Lithuania</option>
+                                             <option value="128">Luxembourg</option>
+                                             <option value="129">Latvia</option>
+                                             <option value="130">Libya</option>
+                                             <option value="131">Morocco</option>
+                                             <option value="132">Monaco</option>
+                                             <option value="133">Moldova</option>
+                                             <option value="134">Montenegro</option>
+                                             <option value="135">Saint Martin</option>
+                                             <option value="136">Madagascar</option>
+                                             <option value="137">Marshall Islands</option>
+                                             <option value="138">Macedonia</option>
+                                             <option value="139">Mali</option>
+                                             <option value="140">Myanmar</option>
+                                             <option value="141">Mongolia</option>
+                                             <option value="142">Macau</option>
+                                             <option value="143">Northern Mariana Islands</option>
+                                             <option value="144">Martinique</option>
+                                             <option value="145">Mauritania</option>
+                                             <option value="146">Montserrat</option>
+                                             <option value="147">Malta</option>
+                                             <option value="148">Mauritius</option>
+                                             <option value="149">Maldives</option>
+                                             <option value="150">Malawi</option>
+                                             <option value="151">Mexico</option>
+                                             <option value="152">Malaysia</option>
+                                             <option value="153">Mozambique</option>
+                                             <option value="154">Namibia</option>
+                                             <option value="155">New Caledonia</option>
+                                             <option value="156">Niger</option>
+                                             <option value="157">Norfolk Island</option>
+                                             <option value="158">Nigeria</option>
+                                             <option value="159">Nicaragua</option>
+                                             <option value="160">Netherlands</option>
+                                             <option value="161">Norway</option>
+                                             <option value="162">Nepal</option>
+                                             <option value="163">Nauru</option>
+                                             <option value="164">Niue</option>
+                                             <option value="165">New Zealand</option>
+                                             <option value="166">Oman</option>
+                                             <option value="167">Panama</option>
+                                             <option value="168">Peru</option>
+                                             <option value="169">French Polynesia</option>
+                                             <option value="170">Papua New Guinea</option>
+                                             <option value="171">Philippines</option>
+                                             <option value="172">Pakistan</option>
+                                             <option value="173">Poland</option>
+                                             <option value="174">St. Pierre and Miquelon</option>
+                                             <option value="175">Puerto Rico</option>
+                                             <option value="176">Palestinian Territory</option>
+                                             <option value="177">Portugal</option>
+                                             <option value="178">Palau</option>
+                                             <option value="179">Paraguay</option>
+                                             <option value="180">Qatar</option>
+                                             <option value="181">Reunion</option>
+                                             <option value="182">Romania</option>
+                                             <option value="183">Serbia</option>
+                                             <option value="184">Russia</option>
+                                             <option value="185">Rwanda</option>
+                                             <option value="186">Saudi Arabia</option>
+                                             <option value="187">Solomon Islands</option>
+                                             <option value="188">Seychelles</option>
+                                             <option value="189">Sudan</option>
+                                             <option value="190">Sweden</option>
+                                             <option value="191">Singapore</option>
+                                             <option value="192">Slovenia</option>
+                                             <option value="193">Slovakia</option>
+                                             <option value="194">Sierra Leone</option>
+                                             <option value="195">San Marino</option>
+                                             <option value="196">Senegal</option>
+                                             <option value="197">Somalia</option>
+                                             <option value="198">Suriname</option>
+                                             <option value="199">South Sudan</option>
+                                             <option value="200">Sao Tome and Principe</option>
+                                             <option value="201">El Salvador</option>
+                                             <option value="202">Sint Maarten</option>
+                                             <option value="203">Syria</option>
+                                             <option value="204">Swaziland</option>
+                                             <option value="205">Turks and Caicos Islands</option>
+                                             <option value="206">Chad</option>
+                                             <option value="207">Togo</option>
+                                             <option value="208">Thailand</option>
+                                             <option value="209">Tajikistan</option>
+                                             <option value="210">Tokelau</option>
+                                             <option value="211">Timor-leste</option>
+                                             <option value="212">Turkmenistan</option>
+                                             <option value="213">Tunisia</option>
+                                             <option value="214">Tonga</option>
+                                             <option value="215">Turkey</option>
+                                             <option value="216">Trinidad and Tobago</option>
+                                             <option value="217">Tuvalu</option>
+                                             <option value="218">Taiwan; Republic of China (ROC)</option>
+                                             <option value="219">Tanzania</option>
+                                             <option value="220">Ukraine</option>
+                                             <option value="221">Uganda</option>
+                                             <option value="222">United States</option>
+                                             <option value="223">Uruguay</option>
+                                             <option value="224">Uzbekistan</option>
+                                             <option value="225">Holy See (VATICAN City State)</option>
+                                             <option value="226">
+                                                Saint Vincent and The Grenadines
+                                             </option>
+                                             <option value="227">Venezuela</option>
+                                             <option value="228">Virgin Islands (BRITISH)</option>
+                                             <option value="229">Virgin Islands (U.S.)</option>
+                                             <option value="230">Viet Nam</option>
+                                             <option value="231">Vanuatu</option>
+                                             <option value="232">Wallis and Futuna Islands</option>
+                                             <option value="233">Samoa (Western)</option>
+                                             <option value="234">Yemen</option>
+                                             <option value="235">Mayotte</option>
+                                             <option value="236">South Africa</option>
+                                             <option value="237">Zambia</option>
+                                             <option value="238">Zimbabwe</option>
+                                          </select>
+                                       </div>
+                                       <div>
+                                          <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                          <input type="email"
+                                             name="Email"
+                                             placeholder="you@example.com"
+                                             required="" class="flex h-10 bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-full border-2 border-gray-200 focus:border-orange-400 rounded-xl">
+                                       </div>
+                                       <div  class="space-y-4 pt-4">
+                                          <div class="flex items-center space-x-2">
+                                             <input type="checkbox"  required id="checkBox1">
+                                             <label class="text-sm text-gray-700" for="checkBox1">I am over 18 and I accept the terms and conditions of this offer.</label>
+                                          </div>
+                                          <div class="flex items-center space-x-2">
+                                             <input type="checkbox"  required id="checkBox2">
+                                             <label class="text-sm text-gray-700" for="checkBox2">The membership is a subscription service, which continues automatically if it is not terminated within 3 days. There will be a 1 EUR charge for authorization purposes. This charge will be reverted back to you.</label>
+                                          </div>
+                                          <div class="flex items-center space-x-2">
+                                             <div class="flex items-center space-x-2">
+                                                <input type="checkbox"  required id="checkBox3">
+                                                <label  class="text-sm text-gray-700" for="checkBox3">I agree to a recurring monthly transaction of 38.95 EUR following a 3 day trial.</label>
+                                             </div>
+                                          </div>
+                                          
+                                          <div class="pt-6">
+                                             <button type="submit"
+                                                value="Continue" class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white font-bold py-4 rounded-xl text-lg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-5 h-5 mr-2" >
+                                                   <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                                                </svg>
+                                                Start My VIP Membership
+                                             </button>
+                                          </div>
+                                          <div class="text-center text-sm text-gray-500 pt-4">
+                                             <p >🔒 Your information is secure and encrypted</p>
+                                             <p >✨ Cancel anytime</p>
+                                          </div>
+                                    </form>
+                                    </div>
+                                 </div>
+                              </div>
+                        </main>
+                        <footer class="bg-white border-t-2 border-orange-200 mt-16"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                        <div ><a class="flex items-center gap-2 md:gap-3 mb-4" href="index.html"><div class="w-8 md:w-10 h-8 md:h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 md:w-6 h-4 md:h-6 text-white" ><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></div><div >
+                        <span class="text-lg md:text-xl font-black text-gray-800">ARENALYST</span><div class="text-xs text-orange-600 font-semibold -mt-1">YOUR HTML5 GAMES ARENA</div></div></a>
+                        <p class="text-gray-600 text-sm md:text-base max-w-md mb-4">Your friendly neighborhood games arena! Play and have fun with hundreds of exciting browser games.</p>
+                        <div class="flex items-center gap-3">
+                        <div
+                           class="px-2 px-3 py-1 bg-red rounded items-center justify-center"
+                           >
+                        <img style="width:30%;" src="img/visa.png" alt="Visa"/>
+                        </div>
+                        </div>
+                        <div class="flex items-center gap-3" >
+                        <div
+                           class="px-2 px-3 py-1"
+                           >
+                        <img style="width:70%;" src="img/adress.png" alt="adress" />
+                        </div>
+                        </div>
+                        </div>
+                        <div class="space-y-2 md:space-y-3">
+                        <div class="flex flex-col sm:flex-row gap-2 sm:gap-6"><a href="contactus.html" class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base">Contact Customer Support</a><a href="cancel.html" class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base">Cancel Subscription</a></div>
+                        <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 lg:gap-6">
+                        <a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="terms">Terms</a><a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="policy.html">Privacy</a>
+                        <a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="refund.html">Refund Terms</a>
+                        <a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="sub_terms.html">Subscription Terms</a></div></div></div></div></footer></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>
+         document.addEventListener('DOMContentLoaded', () => {
+           
+           const nav = document.querySelector('nav.sticky');
+           if (!nav) return;
+         
+           
+           const mobileHeaderRow = nav.querySelector('.md\\:hidden.flex.justify-between.items-center.h-14');
+           const burgerBtn = mobileHeaderRow ? mobileHeaderRow.querySelector('button') : null;
+         
+           
+           const mobilePanel = nav.querySelector('.md\\:hidden.border-t');
+           if (!burgerBtn || !mobilePanel) return;
+         
+           
+           mobilePanel.id = 'mobilePanel';
+           mobilePanel.classList.add('hidden');
+           burgerBtn.setAttribute('aria-controls', 'mobilePanel');
+           burgerBtn.setAttribute('aria-expanded', 'false');
+         
+           
+           const setIcon = (open) => {
+             const svg = burgerBtn.querySelector('svg');
+             if (!svg) return;
+             if (open) {
+               
+               svg.setAttribute('class', 'lucide lucide-x w-5 h-5');
+               svg.innerHTML = '<path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>';
+             } else {
+               
+               svg.setAttribute('class', 'lucide lucide-menu w-5 h-5');
+               svg.innerHTML = '<line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line>';
+             }
+           };
+         
+           
+           const toggleMenu = () => {
+             const nowHidden = mobilePanel.classList.toggle('hidden'); // true если СТАЛ скрытым
+             const isOpen = !nowHidden;
+             burgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+             setIcon(isOpen);
+           };
+         
+           
+           burgerBtn.addEventListener('click', toggleMenu);
+         
+           
+           mobilePanel.addEventListener('click', (e) => {
+             const a = e.target.closest('a');
+             if (a && a.getAttribute('href')?.startsWith('#')) {
+               toggleMenu();
+             }
+           });
+         
+           const mql = window.matchMedia('(min-width: 768px)');
+           const resetToDesktop = () => {
+             if (mql.matches) {
+               mobilePanel.classList.add('hidden');
+               burgerBtn.setAttribute('aria-expanded', 'false');
+               setIcon(false);
+             }
+           };
+           mql.addEventListener('change', resetToDesktop);
+           resetToDesktop(); 
+         
+          
+           setIcon(false);
+         });
+      </script>
+      
+   
+      <script src="js/signup.js"></script>
+       <script type="text/javascript">
+         document.addEventListener("DOMContentLoaded", () => {
+    const trigger1 = document.querySelector(".trigger1");
+    const dropdown1 = document.querySelector(".dropdown1");
+    const trigger2 = document.querySelector(".trigger2");
+    const dropdown2 = document.querySelector(".dropdown2");
+ 
+    trigger1.addEventListener("click", (e) => {
+        e.preventDefault();
+        dropdown1.classList.toggle("opacity-0");
+        dropdown1.classList.toggle("invisible");
+        dropdown1.classList.toggle("opacity-100");
+        dropdown1.classList.toggle("visible");
+    });
+ 
+    trigger2.addEventListener("click", (e) => {
+        e.preventDefault();
+        dropdown2.classList.toggle("opacity-0");
+        dropdown2.classList.toggle("invisible");
+        dropdown2.classList.toggle("opacity-100");
+        dropdown2.classList.toggle("visible");
+    });
+ 
+    document.addEventListener("click", (e) => {
+        if (!trigger1.parentElement.contains(e.target)) {
+            dropdown1.classList.add("opacity-0", "invisible");
+            dropdown1.classList.remove("opacity-100", "visible");
+        }
+ 
+        if (!trigger2.parentElement.contains(e.target)) {
+            dropdown2.classList.add("opacity-0", "invisible");
+            dropdown2.classList.remove("opacity-100", "visible");
+        }
+    });
+});
+      </script>
+      <script src="'js/jquery-3.7.1.min.js"></script>
+   </body>
+</html>
