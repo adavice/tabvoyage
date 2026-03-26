@@ -49,7 +49,7 @@
                <div class="flex flex-col w-full h-full" id="app-demo">
                   <div class="bg-white w-full min-h-full overflow-auto">
                      <div id="component-preview-container">
-                        <div      class="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50">
+                        <div      class="min-h-screen bg-gradient-to-br from-white to-blue-50">
                            <style     >
                               .fun-shadow {
                               box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -65,230 +65,483 @@
                               background: linear-gradient(135deg, #FFE4B5 0%, #FFDAB9 50%, #FFB6C1 100%);
                               }
                               .highlight-button {
-                              background: linear-gradient(135deg, #FF6B35, #F7931E);
-                              color: white;
-                              font-weight: bold;
-                              }
-                              .highlight-button:hover {
-                              background: linear-gradient(135deg, #E55A2B, #D17D1A);
-                              }
+      background: linear-gradient(135deg, #2b7fff, #9810fa);
+      color: white;
+      font-weight: bold;
+    }
+    .highlight-button:hover {
+      background: linear-gradient(
+        135deg,
+        oklch(54.6% 0.245 262.881),
+        oklch(49.6% 0.265 301.924)
+      );
+    }
                            </style>
-                           <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b-2 border-orange-200 fun-shadow">
-                              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                                 <div class="hidden md:flex justify-between items-center h-16">
-                                    <a class="flex items-center gap-3 group" href="index.html">
-                                       <div           class="relative">
-                                          <div           class="w-10 h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center">
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-6 h-6 text-white"          >
-                                                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
-                                             </svg>
-                                          </div>
-                                          <div           class="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full"></div>
-                                       </div>
-                                       <div          >
-                                          <span           class="text-xl font-black text-gray-800 tracking-wide">Tabvoyage</span>
-                                          <div           class="text-xs text-orange-600 font-semibold -mt-1">YOUR HTML5 GAMES ARENA</div>
-                                       </div>
-                                    </a>
-                                    <div           class="flex items-center gap-3">
-                                       <a           href="contactus.html">
-                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 highlight-button text-sm px-4 py-2"          >
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones w-4 h-4 mr-1"          >
-                                                <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
-                                             </svg>
-                                             Contact Us
-                                          </button>
-                                       </a>
-                                       <a           href="cancel.html">
-                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 highlight-button text-sm px-4 py-2"          >
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card w-4 h-4 mr-1"          >
-                                                <rect width="20" height="14" x="2" y="5" rx="2"></rect>
-                                                <line x1="2" x2="22" y1="10" y2="10"></line>
-                                             </svg>
-                                             Cancel Subscription
-                                          </button>
-                                       </a>
-                                    </div>
+                           <nav
+                           class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b-2 border-slate-200 fun-shadow"
+                         >
+                           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                             <div
+                               class="hidden md:flex justify-between items-center h-16"
+                             >
+                               <a
+                                 class="flex items-center gap-3 group"
+                                 href="index.html"
+                               >
+                                 <div class="relative">
+                                   <div
+                                     class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center"
+                                   >
+                                     <svg
+                                       xmlns="http://www.w3.org/2000/svg"
+                                       width="24"
+                                       height="24"
+                                       viewBox="0 0 24 24"
+                                       fill="none"
+                                       stroke="currentColor"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                       class="lucide lucide-star w-6 h-6 text-white"
+                                     >
+                                       <path
+                                         d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                                       ></path>
+                                     </svg>
+                                   </div>
+                                   <div
+                                     class="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full"
+                                   ></div>
                                  </div>
-                                 <div           class="md:hidden flex justify-between items-center h-14">
-                                    <a           class="flex items-center gap-2" href="index.html">
-                                       <div           class="relative">
-                                          <div           class="w-8 h-8 bg-gradient-to-br from-orange-400 to-red-500 rounded-lg flex items-center justify-center">
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-white"          >
-                                                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
-                                             </svg>
-                                          </div>
-                                          <div           class="absolute -top-0.5 -right-0.5 w-3 h-3 bg-yellow-400 rounded-full"></div>
-                                       </div>
-                                       <div          >
-                                          <span           class="text-lg font-black text-gray-800">Tabvoyage</span>
-                                          <div           class="text-xs text-orange-600 font-semibold -mt-1">GAMES ARENA</div>
-                                       </div>
-                                    </a>
-                                    <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md p-2"          >
-                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-5 h-5"          >
-                                          <path d="M18 6 6 18"></path>
-                                          <path d="m6 6 12 12"></path>
+                                 <div>
+                                   <span
+                                     class="text-xl font-black text-gray-800 tracking-wide"
+                                     >Tabvoyage</span
+                                   >
+                                   <div
+                                     class="text-xs text-purple-600 font-semibold mt-0"
+                                   >
+                                     YOUR HTML5 GAMES ARENA
+                                   </div>
+                                 </div>
+                               </a>
+                               <div class="flex items-center gap-3">
+                                 <a href="contactus.html">
+                                   <button
+                                     class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 highlight-button text-sm px-4 py-2"
+                                   >
+                                     <svg
+                                       xmlns="http://www.w3.org/2000/svg"
+                                       width="24"
+                                       height="24"
+                                       viewBox="0 0 24 24"
+                                       fill="none"
+                                       stroke="currentColor"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                       class="lucide lucide-headphones w-4 h-4 mr-1"
+                                     >
+                                       <path
+                                         d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"
+                                       ></path>
+                                     </svg>
+                                     Contact Us
+                                   </button>
+                                 </a>
+                                 <a href="cancel.html">
+                                   <button
+                                     class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 highlight-button text-sm px-4 py-2"
+                                   >
+                                     <svg
+                                       xmlns="http://www.w3.org/2000/svg"
+                                       width="24"
+                                       height="24"
+                                       viewBox="0 0 24 24"
+                                       fill="none"
+                                       stroke="currentColor"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                       class="lucide lucide-credit-card w-4 h-4 mr-1"
+                                     >
+                                       <rect
+                                         width="20"
+                                         height="14"
+                                         x="2"
+                                         y="5"
+                                         rx="2"
+                                       ></rect>
+                                       <line x1="2" x2="22" y1="10" y2="10"></line>
+                                     </svg>
+                                     Cancel Subscription
+                                   </button>
+                                 </a>
+                               </div>
+                             </div>
+                             <div
+                               class="md:hidden flex justify-between items-center h-14"
+                             >
+                               <a class="flex items-center gap-2" href="index.html">
+                                 <div class="relative">
+                                   <div
+                                     class="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center"
+                                   >
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 text-white">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                  </svg>
+                                   </div>
+                                   <div
+                                     class="absolute -top-0.5 -right-0.5 w-3 h-3 bg-yellow-400 rounded-full"
+                                   ></div>
+                                 </div>
+                                 <div>
+                                   <span class="text-lg font-black text-gray-800"
+                                     >Tabvoyage</span
+                                   >
+                                   <div
+                                     class="text-xs text-purple-600 font-semibold mt-0"
+                                   >
+                                   YOUR HTML5 GAMES ARENA
+                                   </div>
+                                 </div>
+                               </a>
+                               <button
+                                 class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md p-2"
+                               >
+                                 <svg
+                                   xmlns="http://www.w3.org/2000/svg"
+                                   width="24"
+                                   height="24"
+                                   viewBox="0 0 24 24"
+                                   fill="none"
+                                   stroke="currentColor"
+                                   stroke-width="2"
+                                   stroke-linecap="round"
+                                   stroke-linejoin="round"
+                                   class="lucide lucide-x w-5 h-5"
+                                 >
+                                   <path d="M18 6 6 18"></path>
+                                   <path d="m6 6 12 12"></path>
+                                 </svg>
+                               </button>
+                             </div>
+                             <div
+                               class="hidden md:block border-t border-gray-100 bg-white/90"
+                             >
+                               <div class="flex items-center justify-between py-3">
+                                 <div
+                                   class="flex items-center space-x-1 overflow-x-auto"
+                                 >
+                                   <a
+                                     class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-teal-50 to-blue-50 hover:from-white hover:to-purple-200 border border-slate-200 text-center min-w-fit"
+                                     href="/?page=games&amp;cat=Family"
+                                   >
+                                     <div class="text-sm font-semibold text-gray-800">
+                                       Family
+                                     </div>
+                                     <div class="text-xs text-purple-600 font-medium">
+                                       100+ games
+                                     </div>
+                                   </a>
+                                   <a
+                                     class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-teal-50 to-blue-50 hover:from-white hover:to-purple-200 border border-slate-200 text-center min-w-fit"
+                                     href="/?page=games&amp;cat=Puzzle"
+                                   >
+                                     <div class="text-sm font-semibold text-gray-800">
+                                       Puzzle
+                                     </div>
+                                     <div class="text-xs text-purple-600 font-medium">
+                                       100+ games
+                                     </div>
+                                   </a>
+                                   <a
+                                     class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-teal-50 to-blue-50 hover:from-white hover:to-purple-200 border border-slate-200 text-center min-w-fit"
+                                     href="/?page=games&amp;cat=Action"
+                                   >
+                                     <div class="text-sm font-semibold text-gray-800">
+                                       Action
+                                     </div>
+                                     <div class="text-xs text-purple-600 font-medium">
+                                       100+ games
+                                     </div>
+                                   </a>
+                                   <a
+                                     class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-teal-50 to-blue-50 hover:from-white hover:to-purple-200 border border-slate-200 text-center min-w-fit"
+                                     href="/?page=games&amp;cat=Strategy"
+                                   >
+                                     <div class="text-sm font-semibold text-gray-800">
+                                       Strategy
+                                     </div>
+                                     <div class="text-xs text-purple-600 font-medium">
+                                       60+ games
+                                     </div>
+                                   </a>
+                                   <a
+                                     class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-teal-50 to-blue-50 hover:from-white hover:to-purple-200 border border-slate-200 text-center min-w-fit games-link"
+                                     href="games.html"
+                                   >
+                                     <div class="text-sm font-semibold text-gray-800">
+                                       ...
+                                     </div>
+                                   </a>
+                                 </div>
+                                 <div class="flex items-center gap-3 ml-4">
+                                   <a href="login.html">
+                                     <button
+                                       class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-gray-300 hover:bg-gray-50"
+                                     >
+                                       <svg
+                                         xmlns="http://www.w3.org/2000/svg"
+                                         width="24"
+                                         height="24"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="2"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round"
+                                         class="lucide lucide-log-in w-4 h-4 mr-2"
+                                       >
+                                         <path
+                                           d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"
+                                         ></path>
+                                         <polyline
+                                           points="10 17 15 12 10 7"
+                                         ></polyline>
+                                         <line x1="15" x2="3" y1="12" y2="12"></line>
                                        </svg>
-                                    </button>
+                                       Log In
+                                     </button>
+                                   </a>
+                                   <a
+                                     href="signup.html"
+                                     class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 py-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold px-6"
+                                     >JOIN</a
+                                   >
+                                   <div style="display: none; position: relative">
+                                     <a
+                                       class="trigger1 cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-gray-300 hover:bg-gray-50 ml-4"
+                                     >
+                                       <span class="ml-2 user_name">user_name</span>
+                                       <svg
+                                         class="w-4 h-4 ml-2"
+                                         fill="none"
+                                         stroke="currentColor"
+                                         viewBox="0 0 24 24"
+                                       >
+                                         <path
+                                           stroke-linecap="round"
+                                           stroke-linejoin="round"
+                                           stroke-width="2"
+                                           d="M19 9l-7 7-7-7"
+                                         />
+                                       </svg>
+                                     </a>
+                                     <div
+                                       class="dropdown1 absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-150 z-10"
+                                     >
+                                       <a
+                                         href="/?delcookie=1"
+                                         class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
+                                         >Log out</a
+                                       >
+                                     </div>
+                                   </div>
                                  </div>
-                                 <div           class="hidden md:block border-t border-gray-100 bg-white/90">
-                                    <div           class="flex items-center justify-between py-3">
-                                       <div           class="flex items-center space-x-1 overflow-x-auto">
-                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Family">
-                                             <div           class="text-sm font-semibold text-gray-800">Family</div>
-                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
-                                          </a>
-                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Puzzle">
-                                             <div           class="text-sm font-semibold text-gray-800">Puzzle</div>
-                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
-                                          </a>
-                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Action">
-                                             <div           class="text-sm font-semibold text-gray-800">Action</div>
-                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
-                                          </a>
-                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Strategy">
-                                             <div           class="text-sm font-semibold text-gray-800">Strategy</div>
-                                             <div           class="text-xs text-orange-600 font-medium">60+ games</div>
-                                          </a>
-                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="games.html">
-                                             <div           class="text-sm font-semibold text-gray-800">...</div>
-                                          </a>
-                                       </div>
-                                       <div           class="flex items-center gap-3 ml-4">
-                                          <a           href="login.html">
-                                             <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-gray-300 hover:bg-gray-50"          >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in w-4 h-4 mr-2"          >
-                                                   <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-                                                   <polyline points="10 17 15 12 10 7"></polyline>
-                                                   <line x1="15" x2="3" y1="12" y2="12"></line>
-                                                </svg>
-                                                Log In
-                                             </button>
-                                          </a>
-                                          <a href="signup.html" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 py-2 bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white font-semibold px-6"          >JOIN</a>
-                                          <div style="display: none; position: relative;">
-                           <a class="trigger1 cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-gray-300 hover:bg-gray-50 ml-4" >
-                <span class="ml-2 user_name">user_name</span>
-                <svg
-                  class="w-4 h-4 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"/>
-                </svg>
-              </a>
-              <div class="dropdown1 absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-150 z-10">
-                <a
-                  href="/?delcookie=1"
-                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
-                  >Log out</a>
-              </div>
-           </div>
-
-                                       </div>
-                                    </div>
+                               </div>
+                             </div>
+                           </div>
+                           <div class="md:hidden border-t border-gray-200 bg-white">
+                             <div class="p-4 space-y-4">
+                               <div class="space-y-2">
+                                 <a class="w-full block" href="contactus.html">
+                                   <button
+                                     class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 w-full highlight-button text-sm py-3"
+                                   >
+                                     <svg
+                                       xmlns="http://www.w3.org/2000/svg"
+                                       width="24"
+                                       height="24"
+                                       viewBox="0 0 24 24"
+                                       fill="none"
+                                       stroke="currentColor"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                       class="lucide lucide-headphones w-4 h-4 mr-2"
+                                     >
+                                       <path
+                                         d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"
+                                       ></path>
+                                     </svg>
+                                     Contact Us
+                                   </button>
+                                 </a>
+                                 <a class="w-full block" href="cancel.html">
+                                   <button
+                                     class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 w-full highlight-button text-sm py-3"
+                                   >
+                                     <svg
+                                       xmlns="http://www.w3.org/2000/svg"
+                                       width="24"
+                                       height="24"
+                                       viewBox="0 0 24 24"
+                                       fill="none"
+                                       stroke="currentColor"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                       class="lucide lucide-credit-card w-4 h-4 mr-2"
+                                     >
+                                       <rect
+                                         width="20"
+                                         height="14"
+                                         x="2"
+                                         y="5"
+                                         rx="2"
+                                       ></rect>
+                                       <line x1="2" x2="22" y1="10" y2="10"></line>
+                                     </svg>
+                                     Cancel Subscription
+                                   </button>
+                                 </a>
+                               </div>
+                               <div class="space-y-2">
+                                 <h3 class="font-semibold text-gray-800 text-sm">
+                                   Categories
+                                 </h3>
+                                 <div class="grid grid-cols-2 gap-2">
+                                   <a
+                                     class="p-3 rounded-lg bg-gradient-to-r from-teal-50 to-blue-50 border border-slate-200 text-center"
+                                     href="/?page=games&amp;cat=Family"
+                                   >
+                                     <div class="text-sm font-semibold text-gray-800">
+                                       Family
+                                     </div>
+                                     <div class="text-xs text-purple-600 font-medium">
+                                       100+ games
+                                     </div>
+                                   </a>
+                                   <a
+                                     class="p-3 rounded-lg bg-gradient-to-r from-teal-50 to-blue-50 border border-slate-200 text-center"
+                                     href="/?page=games&amp;cat=Puzzle"
+                                   >
+                                     <div class="text-sm font-semibold text-gray-800">
+                                       Puzzle
+                                     </div>
+                                     <div class="text-xs text-purple-600 font-medium">
+                                       100+ games
+                                     </div>
+                                   </a>
+                                   <a
+                                     class="p-3 rounded-lg bg-gradient-to-r from-teal-50 to-blue-50 border border-slate-200 text-center"
+                                     href="/?page=games&amp;cat=Action"
+                                   >
+                                     <div class="text-sm font-semibold text-gray-800">
+                                       Action
+                                     </div>
+                                     <div class="text-xs text-purple-600 font-medium">
+                                       100+ games
+                                     </div>
+                                   </a>
+                                   <a
+                                     class="p-3 rounded-lg bg-gradient-to-r from-teal-50 to-blue-50 border border-slate-200 text-center"
+                                     href="/?page=games&amp;cat=Strategy"
+                                   >
+                                     <div class="text-sm font-semibold text-gray-800">
+                                       Strategy
+                                     </div>
+                                     <div class="text-xs text-purple-600 font-medium">
+                                       60+ games
+                                     </div>
+                                   </a>
+                                   <a
+                                     class="p-3 rounded-lg bg-gradient-to-r from-teal-50 to-blue-50 border border-slate-200 text-center games-link"
+                                     href="games.html"
+                                   >
+                                     <div class="text-sm font-semibold text-gray-800">
+                                       More...
+                                     </div>
+                                   </a>
                                  </div>
-                              </div>
-                              <div           class="md:hidden border-t border-gray-200 bg-white">
-                                 <div           class="p-4 space-y-4">
-                                    <div           class="space-y-2">
-                                       <a           class="w-full block" href="contactus.html">
-                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 w-full highlight-button text-sm py-3"          >
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones w-4 h-4 mr-2"          >
-                                                <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
-                                             </svg>
-                                             Contact Us
-                                          </button>
-                                       </a>
-                                       <a           class="w-full block" href="cancel.html">
-                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 w-full highlight-button text-sm py-3"          >
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card w-4 h-4 mr-2"          >
-                                                <rect width="20" height="14" x="2" y="5" rx="2"></rect>
-                                                <line x1="2" x2="22" y1="10" y2="10"></line>
-                                             </svg>
-                                             Cancel Subscription
-                                          </button>
-                                       </a>
-                                    </div>
-                                    <div           class="space-y-2">
-                                       <h3           class="font-semibold text-gray-800 text-sm">Categories</h3>
-                                       <div           class="grid grid-cols-2 gap-2">
-                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Family">
-                                             <div           class="text-sm font-semibold text-gray-800">Family</div>
-                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
-                                          </a>
-                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Puzzle">
-                                             <div           class="text-sm font-semibold text-gray-800">Puzzle</div>
-                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
-                                          </a>
-                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Action">
-                                             <div           class="text-sm font-semibold text-gray-800">Action</div>
-                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
-                                          </a>
-                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Strategy">
-                                             <div           class="text-sm font-semibold text-gray-800">Strategy</div>
-                                             <div           class="text-xs text-orange-600 font-medium">60+ games</div>
-                                          </a>
-                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="games.html">
-                                             <div           class="text-sm font-semibold text-gray-800">More...</div>
-                                          </a>
-                                       </div>
-                                    </div>
-                                    <div           class="space-y-2 pt-4 border-t border-gray-200">
-                                       <div           class="space-y-2">
-                                          <a           href="login.html">
-                                             <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"          >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in w-4 h-4 mr-2"          >
-                                                   <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-                                                   <polyline points="10 17 15 12 10 7"></polyline>
-                                                   <line x1="15" x2="3" y1="12" y2="12"></line>
-                                                </svg>
-                                                Log In
-                                             </button>
-                                          </a>
-                                          <a href="signup.html" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white font-semibold py-3"          >JOIN</a>
-                                       </div>
-                                       <div style="display: none;" class="relative inline-block text-left group pt-5 w-full">
-              <a
-                class="trigger2 cursor-pointer flex items-center justify-between px-4 py-2 border rounded text-sm font-medium text-gray-700 border-indigo-200 hover:bg-gray-100"
-              >
-                <span class="ml-2 user_name">user_name</span>
-                <svg
-                  class="w-4 h-4 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </a>
-              <div
-                class="dropdown2 absolute w-full right-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-150 z-10"
-              >
-                <a
-                  href="/?delcookie=1"
-                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
-                  >Log out</a>
-              </div>
-            </div>
-                                    </div>
+                               </div>
+                               <div class="space-y-2 pt-4 border-t border-gray-200">
+                                 <div class="space-y-2">
+                                   <a href="login.html">
+                                     <button
+                                       class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
+                                     >
+                                       <svg
+                                         xmlns="http://www.w3.org/2000/svg"
+                                         width="24"
+                                         height="24"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="2"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round"
+                                         class="lucide lucide-log-in w-4 h-4 mr-2"
+                                       >
+                                         <path
+                                           d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"
+                                         ></path>
+                                         <polyline
+                                           points="10 17 15 12 10 7"
+                                         ></polyline>
+                                         <line x1="15" x2="3" y1="12" y2="12"></line>
+                                       </svg>
+                                       Log In
+                                     </button>
+                                   </a>
+       
+                                   <a
+                                     href="signup.html"
+                                     class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-3"
+                                     >JOIN</a
+                                   >
                                  </div>
-                              </div>
-                           </nav>
+                                 <div
+                                   style="display: none"
+                                   class="relative inline-block text-left group pt-5 w-full"
+                                 >
+                                   <a
+                                     class="trigger2 cursor-pointer flex items-center justify-between px-4 py-2 border rounded text-sm font-medium text-gray-700 border-indigo-200 hover:bg-gray-100"
+                                   >
+                                     <span class="ml-2 user_name">user_name</span>
+                                     <svg
+                                       class="w-4 h-4 ml-2"
+                                       fill="none"
+                                       stroke="currentColor"
+                                       viewBox="0 0 24 24"
+                                     >
+                                       <path
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round"
+                                         stroke-width="2"
+                                         d="M19 9l-7 7-7-7"
+                                       />
+                                     </svg>
+                                   </a>
+                                   <div
+                                     class="dropdown2 absolute w-full right-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-150 z-10"
+                                   >
+                                     <a
+                                       href="/?delcookie=1"
+                                       class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
+                                       >Log out</a
+                                     >
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
+                         </nav>
                            <main      class="flex-1">
-                              <div      class="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50">
+                              <div      class="min-h-screen bg-gradient-to-br from-white to-blue-50">
                                  <div      class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                                    <div      class="bg-white rounded-2xl shadow-lg border-2 border-orange-200 p-8">
+                                    <div      class="bg-white rounded-2xl shadow-lg border-2 border-slate-200 p-8">
                                        <h1      class="text-4xl font-black text-gray-800 mb-8">Subscription Terms</h1>
                                        <div      class="prose max-w-none">
                                           <h2      class="text-2xl font-bold text-gray-800 mb-4">Subscription Service</h2>
@@ -308,48 +561,117 @@
                                  </div>
                               </div>
                            </main>
-                           <footer      class="bg-white border-t-2 border-orange-200 mt-16">
-                              <div      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-                                 <div      class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                                    <div     >
-                                       <a      class="flex items-center gap-2 md:gap-3 mb-4" href="index.html">
-                                          <div      class="w-8 md:w-10 h-8 md:h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center">
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 md:w-6 h-4 md:h-6 text-white"     >
-                                                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
-                                             </svg>
-                                          </div>
-                                          <div     >
-                                             <span      class="text-lg md:text-xl font-black text-gray-800">Tabvoyage</span>
-                                             <div      class="text-xs text-orange-600 font-semibold -mt-1">YOUR HTML5 GAMES ARENA</div>
-                                          </div>
-                                       </a>
-                                       <p class="text-gray-600 text-sm md:text-base max-w-md mb-4">Your friendly neighborhood games arena! Play and have fun with hundreds of exciting browser games.</p>
-                                       <div class="flex items-center gap-3">
-                                          <div
-                                             class="px-2 px-3 py-1 bg-red rounded items-center justify-center"
-                                             >
-                                             <img style="width:30%;" src="img/visa.png" alt="Visa"/>
-                                          </div>
-                                       </div>
-                                       <div class="flex items-center gap-3" >
-                                          <div
-                                             class="px-2 px-3 py-1"
-                                             >
-                                             <img style="width:70%;" src="img/adress.png" alt="adress" />
-                                          </div>
-                                       </div>
+                           <footer class="bg-white border-t-2 border-slate-200">
+                              <div
+                                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12"
+                              >
+                                <div
+                                  class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8"
+                                >
+                                  <div>
+                                    <a
+                                      class="flex items-center gap-2 md:gap-3 mb-4"
+                                      href="index.html"
+                                    >
+                                      <div
+                                        class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center"
+                                      >
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="2"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="lucide lucide-star w-6 h-6 text-white"
+                                        >
+                                          <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                      <div>
+                                        <span
+                                          class="text-lg md:text-xl font-black text-gray-800"
+                                          >Tabvoyage</span
+                                        >
+                                        <div
+                                          class="text-xs text-purple-600 font-semibold mt-0"
+                                        >
+                                          YOUR HTML5 GAMES ARENA
+                                        </div>
+                                      </div>
+                                    </a>
+                                    <p
+                                      class="text-gray-600 text-sm md:text-base max-w-md mb-4"
+                                    >
+                                      Your friendly neighborhood games arena! Play and
+                                      have fun with hundreds of exciting browser games.
+                                    </p>
+                                    <div class="flex items-center gap-3">
+                                      <div
+                                        class="px-2 px-3 py-3 bg-red rounded items-center justify-center"
+                                      >
+                                        <img
+                                          style="width: 30%"
+                                          src="img/visa.png"
+                                          alt="Visa"
+                                        />
+                                      </div>
                                     </div>
-                                    <div class="space-y-2 md:space-y-3">
-                                       <div class="flex flex-col sm:flex-row gap-2 sm:gap-6"><a href="contactus.html" class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base">Contact Customer Support</a><a href="cancel.html" class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base">Cancel Subscription</a></div>
-                                       <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 lg:gap-6">
-                                          <a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="terms">Terms</a><a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="policy.html">Privacy</a>
-                                          <a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="refund.html">Refund Terms</a>
-                                          <a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="sub_terms.html">Subscription Terms</a>
-                                       </div>
+                                    <div class="flex items-center gap-3">
+                                      <div>
+                                        <p>&copy; <span id="year"></span> Tabvoyage</p>
+                                        <script>
+                                          document.getElementById("year").textContent =
+                                            new Date().getFullYear();
+                                        </script>
+                                        <img style="margin-top: 2px; width: 360px;" src="data:image/png;base64,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" alt="" />
+                                      </div>
                                     </div>
-                                 </div>
+                                  </div>
+                                  <div class="space-y-2 md:space-y-3">
+                                    <div class="flex flex-col sm:flex-row gap-2 sm:gap-6">
+                                      <a
+                                        href="contactus.html"
+                                        class="text-gray-600 hover:text-purple-600 transition-colors text-sm md:text-base"
+                                        >Contact Customer Support</a
+                                      ><a
+                                        href="cancel.html"
+                                        class="text-gray-600 hover:text-purple-600 transition-colors text-sm md:text-base"
+                                        >Cancel Subscription</a
+                                      >
+                                    </div>
+                                    <div
+                                      class="flex flex-col sm:flex-row gap-2 sm:gap-4 lg:gap-6"
+                                    >
+                                      <a
+                                        class="text-gray-600 hover:text-purple-600 transition-colors text-sm md:text-base"
+                                        href="terms"
+                                        >Terms</a
+                                      ><a
+                                        class="text-gray-600 hover:text-purple-600 transition-colors text-sm md:text-base"
+                                        href="policy.html"
+                                        >Privacy</a
+                                      >
+                                      <a
+                                        class="text-gray-600 hover:text-purple-600 transition-colors text-sm md:text-base"
+                                        href="refund.html"
+                                        >Refund Terms</a
+                                      >
+                                      <a
+                                        class="text-gray-600 hover:text-purple-600 transition-colors text-sm md:text-base"
+                                        href="sub_terms.html"
+                                        >Subscription Terms</a
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                           </footer>
+                            </footer>
                         </div>
                      </div>
                   </div>

@@ -30,13 +30,17 @@
                               background: linear-gradient(135deg, #FFE4B5 0%, #FFDAB9 50%, #FFB6C1 100%);
                               }
                               .highlight-button {
-                              background: linear-gradient(135deg, #FF6B35, #F7931E);
-                              color: white;
-                              font-weight: bold;
-                              }
-                              .highlight-button:hover {
-                              background: linear-gradient(135deg, #E55A2B, #D17D1A);
-                              }
+      background: linear-gradient(135deg, #2b7fff, #9810fa);
+      color: white;
+      font-weight: bold;
+    }
+    .highlight-button:hover {
+      background: linear-gradient(
+        135deg,
+        oklch(54.6% 0.245 262.881),
+        oklch(49.6% 0.265 301.924)
+      );
+    }
                            </style>
    <style>
       #mobileMenu.opacity-100 { opacity: 1; }
@@ -69,233 +73,483 @@
                <div class="flex flex-col w-full h-full" id="app-demo">
                   <div class="bg-white w-full min-h-full overflow-auto">
                      <div id="component-preview-container">
-                        <div class="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50">
+                        <div class="min-h-screen bg-gradient-to-br from-white to-blue-50">
                       
-                           <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b-2 border-orange-200 fun-shadow">
-                              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                                 <div class="hidden md:flex justify-between items-center h-16">
-                                    <a class="flex items-center gap-3 group" href="index.html">
-                                       <div           class="relative">
-                                          <div           class="w-10 h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center">
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-6 h-6 text-white"          >
-                                                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
-                                             </svg>
-                                          </div>
-                                          <div           class="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full"></div>
-                                       </div>
-                                       <div          >
-                                          <span           class="text-xl font-black text-gray-800 tracking-wide">Tabvoyage</span>
-                                          <div           class="text-xs text-orange-600 font-semibold -mt-1">YOUR HTML5 GAMES ARENA</div>
-                                       </div>
-                                    </a>
-                                    <div           class="flex items-center gap-3">
-                                       <a           href="contactus.html">
-                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 highlight-button text-sm px-4 py-2"          >
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones w-4 h-4 mr-1"          >
-                                                <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
-                                             </svg>
-                                             Contact Us
-                                          </button>
-                                       </a>
-                                       <a           href="cancel.html">
-                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 highlight-button text-sm px-4 py-2"          >
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card w-4 h-4 mr-1"          >
-                                                <rect width="20" height="14" x="2" y="5" rx="2"></rect>
-                                                <line x1="2" x2="22" y1="10" y2="10"></line>
-                                             </svg>
-                                             Cancel Subscription
-                                          </button>
-                                       </a>
-                                    </div>
-                                 </div>
-                                 <div           class="md:hidden flex justify-between items-center h-14">
-                                    <a           class="flex items-center gap-2" href="index.html">
-                                       <div           class="relative">
-                                          <div           class="w-8 h-8 bg-gradient-to-br from-orange-400 to-red-500 rounded-lg flex items-center justify-center">
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-white"          >
-                                                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
-                                             </svg>
-                                          </div>
-                                          <div           class="absolute -top-0.5 -right-0.5 w-3 h-3 bg-yellow-400 rounded-full"></div>
-                                       </div>
-                                       <div          >
-                                          <span           class="text-lg font-black text-gray-800">Tabvoyage</span>
-                                          <div           class="text-xs text-orange-600 font-semibold -mt-1">GAMES ARENA</div>
-                                       </div>
-                                    </a>
-                                    <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md p-2"          >
-                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-5 h-5"          >
-                                          <path d="M18 6 6 18"></path>
-                                          <path d="m6 6 12 12"></path>
-                                       </svg>
-                                    </button>
-                                 </div>
-                                 <div           class="hidden md:block border-t border-gray-100 bg-white/90">
-                                    <div           class="flex items-center justify-between py-3">
-                                       <div           class="flex items-center space-x-1 overflow-x-auto">
-                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Family">
-                                             <div           class="text-sm font-semibold text-gray-800">Family</div>
-                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
-                                          </a>
-                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Puzzle">
-                                             <div           class="text-sm font-semibold text-gray-800">Puzzle</div>
-                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
-                                          </a>
-                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Action">
-                                             <div           class="text-sm font-semibold text-gray-800">Action</div>
-                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
-                                          </a>
-                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="/?page=games&amp;cat=Strategy">
-                                             <div           class="text-sm font-semibold text-gray-800">Strategy</div>
-                                             <div           class="text-xs text-orange-600 font-medium">60+ games</div>
-                                          </a>
-                                          <a           class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 hover:from-orange-200 hover:to-red-200 border border-orange-200 text-center min-w-fit" href="games.html">
-                                             <div           class="text-sm font-semibold text-gray-800">...</div>
-                                          </a>
-                                       </div>
-                                       <div           class="flex items-center gap-3 ml-4">
-                                          <a           href="login.html">
-                                             <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-gray-300 hover:bg-gray-50"          >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in w-4 h-4 mr-2"          >
-                                                   <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-                                                   <polyline points="10 17 15 12 10 7"></polyline>
-                                                   <line x1="15" x2="3" y1="12" y2="12"></line>
-                                                </svg>
-                                                Log In
-                                             </button>
-                                          </a>
-                                          <a href="signup.html" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 py-2 bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white font-semibold px-6"          >JOIN</a>
-                                          <div style="display: none; position: relative;">
-                           <a class="trigger1 cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-gray-300 hover:bg-gray-50 ml-4" >
-                <span class="ml-2 user_name">user_name</span>
-                <svg
-                  class="w-4 h-4 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"/>
-                </svg>
-              </a>
-              <div class="dropdown1 absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-150 z-10">
-                <a
-                  href="/?delcookie=1"
-                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
-                  >Log out</a>
-              </div>
-           </div>
-                                       </div>
-                                    </div>
-                                 </div>
+                           <nav
+                    class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b-2 border-slate-200 fun-shadow"
+                  >
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                      <div
+                        class="hidden md:flex justify-between items-center h-16"
+                      >
+                        <a
+                          class="flex items-center gap-3 group"
+                          href="index.html"
+                        >
+                          <div class="relative">
+                            <div
+                              class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-star w-6 h-6 text-white"
+                              >
+                                <path
+                                  d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                                ></path>
+                              </svg>
+                            </div>
+                            <div
+                              class="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full"
+                            ></div>
+                          </div>
+                          <div>
+                            <span
+                              class="text-xl font-black text-gray-800 tracking-wide"
+                              >Tabvoyage</span
+                            >
+                            <div
+                              class="text-xs text-purple-600 font-semibold mt-0"
+                            >
+                              YOUR HTML5 GAMES ARENA
+                            </div>
+                          </div>
+                        </a>
+                        <div class="flex items-center gap-3">
+                          <a href="contactus.html">
+                            <button
+                              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 highlight-button text-sm px-4 py-2"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-headphones w-4 h-4 mr-1"
+                              >
+                                <path
+                                  d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"
+                                ></path>
+                              </svg>
+                              Contact Us
+                            </button>
+                          </a>
+                          <a href="cancel.html">
+                            <button
+                              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 highlight-button text-sm px-4 py-2"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-credit-card w-4 h-4 mr-1"
+                              >
+                                <rect
+                                  width="20"
+                                  height="14"
+                                  x="2"
+                                  y="5"
+                                  rx="2"
+                                ></rect>
+                                <line x1="2" x2="22" y1="10" y2="10"></line>
+                              </svg>
+                              Cancel Subscription
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="md:hidden flex justify-between items-center h-14"
+                      >
+                        <a class="flex items-center gap-2" href="index.html">
+                          <div class="relative">
+                            <div
+                              class="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center"
+                            >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 text-white">
+                              <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                            </svg>
+                            </div>
+                            <div
+                              class="absolute -top-0.5 -right-0.5 w-3 h-3 bg-yellow-400 rounded-full"
+                            ></div>
+                          </div>
+                          <div>
+                            <span class="text-lg font-black text-gray-800"
+                              >Tabvoyage</span
+                            >
+<div
+                              class="text-xs text-purple-600 font-semibold mt-0"
+                            >
+                            YOUR HTML5 GAMES ARENA
+                            </div>
+                          </div>
+                        </a>
+                        <button
+                          class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md p-2"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-x w-5 h-5"
+                          >
+                            <path d="M18 6 6 18"></path>
+                            <path d="m6 6 12 12"></path>
+                          </svg>
+                        </button>
+                      </div>
+                      <div
+                        class="hidden md:block border-t border-gray-100 bg-white/90"
+                      >
+                        <div class="flex items-center justify-between py-3">
+                          <div
+                            class="flex items-center space-x-1 overflow-x-auto"
+                          >
+                            <a
+                              class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-teal-50 to-blue-50 hover:from-white hover:to-purple-200 border border-slate-200 text-center min-w-fit"
+                              href="/?page=games&amp;cat=Family"
+                            >
+                              <div class="text-sm font-semibold text-gray-800">
+                                Family
                               </div>
-                              <div           class="md:hidden border-t border-gray-200 bg-white">
-                                 <div           class="p-4 space-y-4">
-                                    <div           class="space-y-2">
-                                       <a           class="w-full block" href="contactus.html">
-                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 w-full highlight-button text-sm py-3"          >
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones w-4 h-4 mr-2"          >
-                                                <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
-                                             </svg>
-                                             Contact Us
-                                          </button>
-                                       </a>
-                                       <a           class="w-full block" href="cancel.html">
-                                          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 w-full highlight-button text-sm py-3"          >
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card w-4 h-4 mr-2"          >
-                                                <rect width="20" height="14" x="2" y="5" rx="2"></rect>
-                                                <line x1="2" x2="22" y1="10" y2="10"></line>
-                                             </svg>
-                                             Cancel Subscription
-                                          </button>
-                                       </a>
-                                    </div>
-                                    <div           class="space-y-2">
-                                       <h3           class="font-semibold text-gray-800 text-sm">Categories</h3>
-                                       <div           class="grid grid-cols-2 gap-2">
-                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Family">
-                                             <div           class="text-sm font-semibold text-gray-800">Family</div>
-                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
-                                          </a>
-                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Puzzle">
-                                             <div           class="text-sm font-semibold text-gray-800">Puzzle</div>
-                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
-                                          </a>
-                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Action">
-                                             <div           class="text-sm font-semibold text-gray-800">Action</div>
-                                             <div           class="text-xs text-orange-600 font-medium">100+ games</div>
-                                          </a>
-                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="/?page=games&amp;cat=Strategy">
-                                             <div           class="text-sm font-semibold text-gray-800">Strategy</div>
-                                             <div           class="text-xs text-orange-600 font-medium">60+ games</div>
-                                          </a>
-                                          <a           class="p-3 rounded-lg bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-center" href="games.html">
-                                             <div           class="text-sm font-semibold text-gray-800">More...</div>
-                                          </a>
-                                       </div>
-                                    </div>
-                                    <div           class="space-y-2 pt-4 border-t border-gray-200">
-                                       <div           class="space-y-2">
-                                          <a           href="login.html">
-                                             <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"          >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in w-4 h-4 mr-2"          >
-                                                   <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-                                                   <polyline points="10 17 15 12 10 7"></polyline>
-                                                   <line x1="15" x2="3" y1="12" y2="12"></line>
-                                                </svg>
-                                                Log In
-                                             </button>
-                                          </a>
-                                          <a href="signup.html" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white font-semibold py-3"          >JOIN</a>
-                                       </div>
-                                       <div style="display: none;" class="relative inline-block text-left group pt-5 w-full">
-              <a
-                class="trigger2 cursor-pointer flex items-center justify-between px-4 py-2 border rounded text-sm font-medium text-gray-700 border-indigo-200 hover:bg-gray-100"
-              >
-                <span class="ml-2 user_name">user_name</span>
-                <svg
-                  class="w-4 h-4 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </a>
-              <div
-                class="dropdown2 absolute w-full right-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-150 z-10"
-              >
-                <a
-                  href="/?delcookie=1"
-                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
-                  >Log out</a>
-              </div>
-            </div>
-                                    </div>
-                                 </div>
+                              <div class="text-xs text-purple-600 font-medium">
+                                100+ games
                               </div>
-                           </nav>
+                            </a>
+                            <a
+                              class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-teal-50 to-blue-50 hover:from-white hover:to-purple-200 border border-slate-200 text-center min-w-fit"
+                              href="/?page=games&amp;cat=Puzzle"
+                            >
+                              <div class="text-sm font-semibold text-gray-800">
+                                Puzzle
+                              </div>
+                              <div class="text-xs text-purple-600 font-medium">
+                                100+ games
+                              </div>
+                            </a>
+                            <a
+                              class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-teal-50 to-blue-50 hover:from-white hover:to-purple-200 border border-slate-200 text-center min-w-fit"
+                              href="/?page=games&amp;cat=Action"
+                            >
+                              <div class="text-sm font-semibold text-gray-800">
+                                Action
+                              </div>
+                              <div class="text-xs text-purple-600 font-medium">
+                                100+ games
+                              </div>
+                            </a>
+                            <a
+                              class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-teal-50 to-blue-50 hover:from-white hover:to-purple-200 border border-slate-200 text-center min-w-fit"
+                              href="/?page=games&amp;cat=Strategy"
+                            >
+                              <div class="text-sm font-semibold text-gray-800">
+                                Strategy
+                              </div>
+                              <div class="text-xs text-purple-600 font-medium">
+                                60+ games
+                              </div>
+                            </a>
+                            <a
+                              class="category-tab flex-shrink-0 px-4 py-2 rounded-full bg-gradient-to-r from-teal-50 to-blue-50 hover:from-white hover:to-purple-200 border border-slate-200 text-center min-w-fit games-link"
+                              href="games.html"
+                            >
+                              <div class="text-sm font-semibold text-gray-800">
+                                ...
+                              </div>
+                            </a>
+                          </div>
+                          <div class="flex items-center gap-3 ml-4">
+                            <a href="login.html">
+                              <button
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-gray-300 hover:bg-gray-50"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  class="lucide lucide-log-in w-4 h-4 mr-2"
+                                >
+                                  <path
+                                    d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"
+                                  ></path>
+                                  <polyline
+                                    points="10 17 15 12 10 7"
+                                  ></polyline>
+                                  <line x1="15" x2="3" y1="12" y2="12"></line>
+                                </svg>
+                                Log In
+                              </button>
+                            </a>
+                            <a
+                              href="signup.html"
+                              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 py-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold px-6"
+                              >JOIN</a
+                            >
+                            <div style="display: none; position: relative">
+                              <a
+                                class="trigger1 cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-gray-300 hover:bg-gray-50 ml-4"
+                              >
+                                <span class="ml-2 user_name">user_name</span>
+                                <svg
+                                  class="w-4 h-4 ml-2"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 9l-7 7-7-7"
+                                  />
+                                </svg>
+                              </a>
+                              <div
+                                class="dropdown1 absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-150 z-10"
+                              >
+                                <a
+                                  href="/?delcookie=1"
+                                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
+                                  >Log out</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="md:hidden border-t border-gray-200 bg-white">
+                      <div class="p-4 space-y-4">
+                        <div class="space-y-2">
+                          <a class="w-full block" href="contactus.html">
+                            <button
+                              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 w-full highlight-button text-sm py-3"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-headphones w-4 h-4 mr-2"
+                              >
+                                <path
+                                  d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"
+                                ></path>
+                              </svg>
+                              Contact Us
+                            </button>
+                          </a>
+                          <a class="w-full block" href="cancel.html">
+                            <button
+                              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 w-full highlight-button text-sm py-3"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-credit-card w-4 h-4 mr-2"
+                              >
+                                <rect
+                                  width="20"
+                                  height="14"
+                                  x="2"
+                                  y="5"
+                                  rx="2"
+                                ></rect>
+                                <line x1="2" x2="22" y1="10" y2="10"></line>
+                              </svg>
+                              Cancel Subscription
+                            </button>
+                          </a>
+                        </div>
+                        <div class="space-y-2">
+                          <h3 class="font-semibold text-gray-800 text-sm">
+                            Categories
+                          </h3>
+                          <div class="grid grid-cols-2 gap-2">
+                            <a
+                              class="p-3 rounded-lg bg-gradient-to-r from-teal-50 to-blue-50 border border-slate-200 text-center"
+                              href="/?page=games&amp;cat=Family"
+                            >
+                              <div class="text-sm font-semibold text-gray-800">
+                                Family
+                              </div>
+                              <div class="text-xs text-purple-600 font-medium">
+                                100+ games
+                              </div>
+                            </a>
+                            <a
+                              class="p-3 rounded-lg bg-gradient-to-r from-teal-50 to-blue-50 border border-slate-200 text-center"
+                              href="/?page=games&amp;cat=Puzzle"
+                            >
+                              <div class="text-sm font-semibold text-gray-800">
+                                Puzzle
+                              </div>
+                              <div class="text-xs text-purple-600 font-medium">
+                                100+ games
+                              </div>
+                            </a>
+                            <a
+                              class="p-3 rounded-lg bg-gradient-to-r from-teal-50 to-blue-50 border border-slate-200 text-center"
+                              href="/?page=games&amp;cat=Action"
+                            >
+                              <div class="text-sm font-semibold text-gray-800">
+                                Action
+                              </div>
+                              <div class="text-xs text-purple-600 font-medium">
+                                100+ games
+                              </div>
+                            </a>
+                            <a
+                              class="p-3 rounded-lg bg-gradient-to-r from-teal-50 to-blue-50 border border-slate-200 text-center"
+                              href="/?page=games&amp;cat=Strategy"
+                            >
+                              <div class="text-sm font-semibold text-gray-800">
+                                Strategy
+                              </div>
+                              <div class="text-xs text-purple-600 font-medium">
+                                60+ games
+                              </div>
+                            </a>
+                            <a
+                              class="p-3 rounded-lg bg-gradient-to-r from-teal-50 to-blue-50 border border-slate-200 text-center games-link"
+                              href="games.html"
+                            >
+                              <div class="text-sm font-semibold text-gray-800">
+                                More...
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="space-y-2 pt-4 border-t border-gray-200">
+                          <div class="space-y-2">
+                            <a href="login.html">
+                              <button
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  class="lucide lucide-log-in w-4 h-4 mr-2"
+                                >
+                                  <path
+                                    d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"
+                                  ></path>
+                                  <polyline
+                                    points="10 17 15 12 10 7"
+                                  ></polyline>
+                                  <line x1="15" x2="3" y1="12" y2="12"></line>
+                                </svg>
+                                Log In
+                              </button>
+                            </a>
+
+                            <a
+                              href="signup.html"
+                              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-3"
+                              >JOIN</a
+                            >
+                          </div>
+                          <div
+                            style="display: none"
+                            class="relative inline-block text-left group pt-5 w-full"
+                          >
+                            <a
+                              class="trigger2 cursor-pointer flex items-center justify-between px-4 py-2 border rounded text-sm font-medium text-gray-700 border-indigo-200 hover:bg-gray-100"
+                            >
+                              <span class="ml-2 user_name">user_name</span>
+                              <svg
+                                class="w-4 h-4 ml-2"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M19 9l-7 7-7-7"
+                                />
+                              </svg>
+                            </a>
+                            <div
+                              class="dropdown2 absolute w-full right-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-150 z-10"
+                            >
+                              <a
+                                href="/?delcookie=1"
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 w-full border-gray-300 hover:bg-gray-50 py-3"
+                                >Log out</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
                            <main class="flex-1">
-                              <div class="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50">
+                              <div class="min-h-screen bg-gradient-to-br from-white to-blue-50">
                                  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                                    <div class="bg-white rounded-2xl shadow-lg border-2 border-orange-200 p-8">
+                                    <div class="bg-white rounded-2xl shadow-lg border-2 border-slate-200 p-8">
                                        <h1 class="text-4xl font-black text-gray-800 mb-8">Terms &amp; Conditions</h1>
                                        <div class="prose max-w-none">
-                                          <p class="text-gray-600 mb-6">Radinet LTD (11 Karyatidon Street, 2311 Lakatamia, Nicosia, Cyprus).</p>
-                                          <h2 class="text-2xl font-bold text-gray-800 mb-4">Terms Agreement</h2>
+                                        <img class="mb-6" style="width: 280px;" src="data:image/png;base64,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" alt="" />
+                                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Terms Agreement</h2>
                                           <p class="text-gray-600 mb-6">By engaging with tabvoyage.com you accept the conditions outlined in this agreement. If you disagree with any part of these conditions, please do not use the platform or its associated services.</p>
                                           <p class="text-gray-600 mb-6">Modifications to membership pricing or related terms may occur at our discretion. If significant adjustments are planned, subscribers will be notified at least 21 days before the effective date.</p>
                                           <p class="text-gray-600 mb-6">Any disputes related to these Terms will be resolved solely under Cypriot law and in its courts.</p>
                                           <h2 class="text-2xl font-bold text-gray-800 mb-4">Essential Subscription Info</h2>
                                           <p class="text-gray-600 mb-6">Upon subscribing, a temporary authorization charge of 1 EUR (or the equivalent in your local currency) may be applied to verify your payment method; this amount will be refunded promptly. Detailed pricing information is provided in the "Pricing" section. Following a complimentary 3-day trial period, the subscription will automatically renew every 28 days unless you cancel within the trial. By using this service, you affirm that you are at least 18 years old and agree to comply with these terms.</p>
-                                          <p class="text-gray-600 mb-6">To avoid service interruption, recurring fees are charged automatically unless cancellation is requested via <a href="mailto:support@tabvoyage.com" class="text-orange-600 hover:text-orange-700">support@tabvoyage.com</a>. Subscription periods are prepaid, and it's your duty to ensure your payment details remain up to date.</p>
+                                          <p class="text-gray-600 mb-6">To avoid service interruption, recurring fees are charged automatically unless cancellation is requested via <a href="mailto:support@tabvoyage.com" class="text-purple-600 hover:text-orange-700">support@tabvoyage.com</a>. Subscription periods are prepaid, and it's your duty to ensure your payment details remain up to date.</p>
                                           <p class="text-gray-600 mb-6">Important emails from Tabvoyage, such as invoices or welcome messages, may not reach you if your email settings block them or direct them to spam. Therefore, use a reliable email service and check your spam folders regularly.</p>
                                           <h2 class="text-2xl font-bold text-gray-800 mb-4">Accepted Payment Options</h2>
                                           <p class="text-gray-600 mb-6">Access may be paused if your payment method isn't updated after a failed charge, such as for insufficient funds or an expired card. Any due amount remains your responsibility, and billing dates may shift accordingly. We may continue charging your method, including with details updated by your bank. Additional fees may apply based on your payment type, please confirm with your provider.</p>
@@ -304,284 +558,353 @@
                                           <p class="text-gray-600 mb-4">The standard billing cycle renews every 28 days, and unless cancellation occurs before the renewal date, the associated payment method will be charged accordingly. Details about charges and accepted payment types can be found in the relevant billing sections.</p>
                                           <p class="text-gray-600 mb-6">To protect service integrity, we retain the authority to block transactions or reject refund claims in the event of any misuse, security concerns, or policy violations.</p>
                                           <h2 class="text-2xl font-bold text-gray-800 mb-4">Subscription Costs</h2>
-                                          <div class="bg-orange-50 rounded-xl border-2 border-orange-200 p-6 mb-6 overflow-x-auto">
-                                             <table class="w-full border-collapse text-sm">
-                                                <thead     >
-                                                   <tr class="border-b-2 border-orange-200">
-                                                      <th class="text-left py-3 px-2 font-bold text-gray-800">Region</th>
-                                                      <th class="text-left py-3 px-2 font-bold text-gray-800">Verification Charge (Refunded)</th>
-                                                      <th class="text-left py-3 px-2 font-bold text-gray-800">Monthly Fee</th>
-                                                   </tr>
-                                                </thead>
-                                                <tbody     >
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 font-semibold text-gray-800">Default Rate (for unspecified countries)</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 EUR</td>
-                                                      <td class="py-2 px-2 text-orange-600 font-bold">38.95 EUR</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Algeria</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Argentina</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Armenia</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Australia</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 AUD</td>
-                                                      <td class="py-2 px-2 text-gray-600">65.00 AUD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Azerbaijan</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Bahrain</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Brazil</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Canada</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 CAD</td>
-                                                      <td class="py-2 px-2 text-gray-600">59 CAD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Chile</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Colombia</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Denmark</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 DKK</td>
-                                                      <td class="py-2 px-2 text-gray-600">299.00 DKK</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Egypt</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Georgia</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">India</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Indonesia</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Iraq</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Japan</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Kazakhstan</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Kuwait</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Malaysia</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Mexico</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Morocco</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">New Zealand</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 NZD</td>
-                                                      <td class="py-2 px-2 text-gray-600">70.00 NZD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Nigeria</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Oman</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Philippines</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Qatar</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Saudi Arabia</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Senegal</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Singapore</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">South Africa</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">South Korea</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Sweden</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 SEK</td>
-                                                      <td class="py-2 px-2 text-gray-600">500.00 SEK</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Switzerland</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 CHF</td>
-                                                      <td class="py-2 px-2 text-gray-600">40.00 CHF</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Thailand</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">The Emirates</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">The United Kingdom</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 GBP</td>
-                                                      <td class="py-2 px-2 text-gray-600">38.95 GBP</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Tunisia</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Turkey</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">Uruguay</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                   <tr class="border-b border-orange-100">
-                                                      <td class="py-2 px-2 text-gray-600">USA</td>
-                                                      <td class="py-2 px-2 text-gray-600">1.00 USD</td>
-                                                      <td class="py-2 px-2 text-gray-600">48.88 USD</td>
-                                                   </tr>
-                                                </tbody>
-                                             </table>
+                                          <div class="bg-cyan-50 rounded-xl border-2 border-slate-200 p-6 mb-6 overflow-x-auto">
+                                            <table class="w-full border-collapse text-sm">
+                                              <thead>
+                                                 <tr class="border-b-2 border-slate-200">
+                                                    <th class="text-left py-3 px-2 font-bold text-gray-800">Region</th>
+                                                    <th class="text-left py-3 px-2 font-bold text-gray-800">Verification Charge (Refunded)</th>
+                                                    <th class="text-left py-3 px-2 font-bold text-gray-800">28-day Fee</th>
+                                                 </tr>
+                                              </thead>
+                                              <tbody>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 font-semibold text-gray-800">Default Rate (for unspecified countries)</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 EUR</td>
+                                                    <td class="py-2 px-2 text-purple-600 font-bold">38.95 EUR</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Algeria</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Argentina</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Armenia</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Australia</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 AUD</td>
+                                                    <td class="py-2 px-2 text-gray-600">65.00 AUD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Azerbaijan</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Bahrain</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Brazil</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Canada</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 CAD</td>
+                                                    <td class="py-2 px-2 text-gray-600">59 CAD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Chile</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Colombia</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Denmark</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 DKK</td>
+                                                    <td class="py-2 px-2 text-gray-600">299.00 DKK</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Egypt</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Georgia</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">India</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Indonesia</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Iraq</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Japan</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Kazakhstan</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Kuwait</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Malaysia</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Mexico</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Morocco</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">New Zealand</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 NZD</td>
+                                                    <td class="py-2 px-2 text-gray-600">70.00 NZD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Nigeria</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Oman</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Philippines</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Qatar</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Saudi Arabia</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Senegal</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Singapore</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">South Africa</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">South Korea</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Sweden</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 SEK</td>
+                                                    <td class="py-2 px-2 text-gray-600">500.00 SEK</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Switzerland</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 CHF</td>
+                                                    <td class="py-2 px-2 text-gray-600">40.00 CHF</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Thailand</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">The Emirates</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">The United Kingdom</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 GBP</td>
+                                                    <td class="py-2 px-2 text-gray-600">38.95 GBP</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Tunisia</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Turkey</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">Uruguay</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                                 <tr class="border-b border-slate-200">
+                                                    <td class="py-2 px-2 text-gray-600">USA</td>
+                                                    <td class="py-2 px-2 text-gray-600">1.00 USD</td>
+                                                    <td class="py-2 px-2 text-gray-600">48.88 USD</td>
+                                                 </tr>
+                                              </tbody>
+                                           </table>
                                           </div>
                                           <h2 class="text-2xl font-bold text-gray-800 mb-4">Subscription Cancellation and Refunds</h2>
-                                          <p class="text-gray-600 mb-4">Subscription can be ended at any time by contacting <a href="mailto:support@tabvoyage.com" class="text-orange-600 hover:text-orange-700">support@tabvoyage.com</a> or using the Contact page. Cancellation takes effect after the current billing cycle, after which account access ends and data may be removed. Note that cancellations aren't allowed within 24 hours of signup due to processing limits.</p>
-                                          <p class="text-gray-600 mb-6">To request a refund, contact <a href="mailto:support@tabvoyage.com" class="text-orange-600 hover:text-orange-700">support@tabvoyage.com</a>. Refunds take up to 14 days to process and will be returned to the original payment method. Partial subscriptions are non-refundable. Approval of refunds is at our sole discretion and does not guarantee future refunds. Refunds are not available for memberships that have been partially used.</p>
+                                          <p class="text-gray-600 mb-4">Subscription can be ended at any time by contacting <a href="mailto:support@tabvoyage.com" class="text-purple-600 hover:text-orange-700">support@tabvoyage.com</a> or using the Contact page. Cancellation takes effect after the current billing cycle, after which account access ends and data may be removed. Note that cancellations aren't allowed within 24 hours of signup due to processing limits.</p>
+                                          <p class="text-gray-600 mb-6">To request a refund, contact <a href="mailto:support@tabvoyage.com" class="text-purple-600 hover:text-orange-700">support@tabvoyage.com</a>. Refunds take up to 14 days to process and will be returned to the original payment method. Partial subscriptions are non-refundable. Approval of refunds is at our sole discretion and does not guarantee future refunds. Refunds are not available for memberships that have been partially used.</p>
                                           <h2 class="text-2xl font-bold text-gray-800 mb-4">Data Risk Notice</h2>
                                           <p class="text-gray-600 mb-6">Tabvoyage is not liable for data loss caused by uncontrollable events such as outages, legal actions, disasters, or security breaches. This applies even if only part of the service is affected.</p>
-                                          <div class="mt-8 text-center bg-orange-50 rounded-xl p-6 border-2 border-orange-200">
-                                             <p class="text-lg font-semibold text-orange-600">Welcome aboard! May your time here be fun!</p>
+                                          <div class="mt-8 text-center bg-cyan-50 rounded-xl p-6 border-2 border-slate-200">
+                                             <p class="text-lg font-semibold text-purple-600">Welcome aboard! May your time here be fun!</p>
                                           </div>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                            </main>
-                           <footer class="bg-white border-t-2 border-orange-200 mt-16">
-                              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                                    <div>
-                                       <a class="flex items-center gap-2 md:gap-3 mb-4" href="index.html">
-                                          <div class="w-8 md:w-10 h-8 md:h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center">
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 md:w-6 h-4 md:h-6 text-white">
-                                                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
-                                             </svg>
-                                          </div>
-                                          <div>
-                                             <span class="text-lg md:text-xl font-black text-gray-800">Tabvoyage</span>
-                                             <div class="text-xs text-orange-600 font-semibold -mt-1">YOUR HTML5 GAMES ARENA</div>
-                                          </div>
-                                       </a>
-                                       <p class="text-gray-600 text-sm md:text-base max-w-md mb-4">Your friendly neighborhood games arena! Play and have fun with hundreds of exciting browser games.</p>
-                                       <div class="flex items-center gap-3">
-                                          <div
-                                             class="px-2 px-3 py-1 bg-red rounded items-center justify-center"
-                                             >
-                                             <img style="width:30%;" src="img/visa.png" alt="Visa"/>
-                                          </div>
-                                       </div>
-                                       <div class="flex items-center gap-3" >
-                                          <div
-                                             class="px-2 px-3 py-1"
-                                             >
-                                             <img style="width:70%;" src="img/adress.png" alt="adress" />
-                                          </div>
-                                       </div>
+                           <footer class="bg-white border-t-2 border-slate-200">
+                              <div
+                                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12"
+                              >
+                                <div
+                                  class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8"
+                                >
+                                  <div>
+                                    <a
+                                      class="flex items-center gap-2 md:gap-3 mb-4"
+                                      href="index.html"
+                                    >
+                                      <div
+                                        class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center"
+                                      >
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="2"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="lucide lucide-star w-6 h-6 text-white"
+                                        >
+                                          <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                      <div>
+                                        <span
+                                          class="text-lg md:text-xl font-black text-gray-800"
+                                          >Tabvoyage</span
+                                        >
+                                        <div
+                                          class="text-xs text-purple-600 font-semibold mt-0"
+                                        >
+                                          YOUR HTML5 GAMES ARENA
+                                        </div>
+                                      </div>
+                                    </a>
+                                    <p
+                                      class="text-gray-600 text-sm md:text-base max-w-md mb-4"
+                                    >
+                                      Your friendly neighborhood games arena! Play and
+                                      have fun with hundreds of exciting browser games.
+                                    </p>
+                                    <div class="flex items-center gap-3">
+                                      <div
+                                        class="px-2 px-3 py-3 bg-red rounded items-center justify-center"
+                                      >
+                                        <img
+                                          style="width: 30%"
+                                          src="img/visa.png"
+                                          alt="Visa"
+                                        />
+                                      </div>
                                     </div>
-                                    <div class="space-y-2 md:space-y-3">
-                                       <div class="flex flex-col sm:flex-row gap-2 sm:gap-6"><a href="contactus.html" class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base">Contact Customer Support</a><a href="cancel.html" class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base">Cancel Subscription</a></div>
-                                       <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 lg:gap-6">
-                                          <a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="terms">Terms</a><a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="policy.html">Privacy</a>
-                                          <a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="refund.html">Refund Terms</a>
-                                          <a class="text-gray-600 hover:text-orange-600 transition-colors text-sm md:text-base" href="sub_terms.html">Subscription Terms</a>
-                                       </div>
+                                    <div class="flex items-center gap-3">
+                                      <div>
+                                        <p>&copy; <span id="year"></span> Tabvoyage</p>
+                                        <script>
+                                          document.getElementById("year").textContent =
+                                            new Date().getFullYear();
+                                        </script>
+                                        <img style="margin-top: 2px; width: 360px;" src="data:image/png;base64,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" alt="" />
+                                      </div>
                                     </div>
-                                 </div>
+                                  </div>
+                                  <div class="space-y-2 md:space-y-3">
+                                    <div class="flex flex-col sm:flex-row gap-2 sm:gap-6">
+                                      <a
+                                        href="contactus.html"
+                                        class="text-gray-600 hover:text-purple-600 transition-colors text-sm md:text-base"
+                                        >Contact Customer Support</a
+                                      ><a
+                                        href="cancel.html"
+                                        class="text-gray-600 hover:text-purple-600 transition-colors text-sm md:text-base"
+                                        >Cancel Subscription</a
+                                      >
+                                    </div>
+                                    <div
+                                      class="flex flex-col sm:flex-row gap-2 sm:gap-4 lg:gap-6"
+                                    >
+                                      <a
+                                        class="text-gray-600 hover:text-purple-600 transition-colors text-sm md:text-base"
+                                        href="terms"
+                                        >Terms</a
+                                      ><a
+                                        class="text-gray-600 hover:text-purple-600 transition-colors text-sm md:text-base"
+                                        href="policy.html"
+                                        >Privacy</a
+                                      >
+                                      <a
+                                        class="text-gray-600 hover:text-purple-600 transition-colors text-sm md:text-base"
+                                        href="refund.html"
+                                        >Refund Terms</a
+                                      >
+                                      <a
+                                        class="text-gray-600 hover:text-purple-600 transition-colors text-sm md:text-base"
+                                        href="sub_terms.html"
+                                        >Subscription Terms</a
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                           </footer>
+                            </footer>
                         </div>
                      </div>
                   </div>
